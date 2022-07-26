@@ -1,1 +1,45 @@
-@charset "utf-8";
+@charset "UTF-8";
+/* 스킵 메뉴 */
+#skip {
+  position: relative;
+}
+
+#skip a {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 140px;
+  border: 1px solid #fff;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  z-index: 1;
+}
+
+#skip a:active,
+#skip a:focus {
+  top: 0;
+}
+
+/* 폰트 */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}
+
+/* 레이아웃 */
+.container {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+/* 로우 영역 */
+/* header *//*# sourceMappingURL=style.css.map */
