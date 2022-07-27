@@ -3,7 +3,6 @@
 #skip {
   position: relative;
 }
-
 #skip a {
   position: absolute;
   left: 0;
@@ -16,30 +15,128 @@
   line-height: 30px;
   z-index: 1;
 }
-
-#skip a:active,
-#skip a:focus {
+#skip a.active, #skip a.focus {
   top: 0;
 }
 
-/* 폰트 */
-html {
-  font-size: 62.5%;
+/* header */
+#header .container {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#header a {
+  font-size: 17px;
+  font-weight: 400;
+}
+#header #header_gnb {
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+#header #header_top .row, #header #header_gnb .row {
+  display: flex;
+  align-items: center;
+}
+#header #header_top .row {
+  align-items: flex-end;
+}
+#header #header_top .row {
+  padding: 24px 0;
+}
+#header #header_top .top_slog, #header #header_gnb .gnb_user {
+  margin-left: auto;
 }
 
-body {
-  font-size: 1.6rem;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 300;
+#header_top .top_logo a img {
+  width: 140px;
+}
+
+#header_top .top_sbar form {
+  margin-left: 48px;
+}
+
+#header_top .top_sbar form fieldset {
+  width: 500px;
+  border: 2px solid #97BF42;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 7px 20px;
+}
+
+#header_top .top_sbar form fieldset .sbarInput {
+  width: 80%;
+  height: 30px;
+  font-size: 1.4rem;
+}
+
+#header_top .top_sbar form fieldset .sbarBtn {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  margin-top: 2px;
+}
+
+#header_gnb .gnb_btn .lineMenu {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background: #97BF42 url("../img/menu.png") no-repeat center;
+  background-size: 28px 28px;
+}
+
+#header_gnb .gnb_menu ul li {
+  display: inline-block;
+  padding: 0 24px;
+}
+
+#header_gnb .gnb_user ul li {
+  display: inline-block;
+  position: relative;
+}
+
+#header_gnb .gnb_user ul li a {
+  padding: 0 24px;
+  position: relative;
+}
+
+#header_gnb .gnb_user ul li a img {
+  width: 24px;
+}
+
+#header_gnb .gnb_user ul li a strong {
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  font-size: 10px;
+  display: inline-block;
+  color: #fff;
+  padding: 0 5px;
+}
+
+#header_gnb .gnb_user ul li.bt_user a strong {
+  background: #444;
+  min-width: 15px;
+  height: 18px;
+  border-radius: 8.5px;
+  top: 12px;
+  right: 4px;
+  line-height: 18px;
+}
+
+#header_gnb .gnb_user ul li.bt_cart a strong {
+  min-width: 20px;
+  height: 20px;
+  background: #ec1a3b;
+  border-radius: 50%;
+  line-height: 20px;
+  top: 9px;
+  right: 14px;
 }
 
 /* 레이아웃 */
 .container {
   position: relative;
-  max-width: 1280px;
   margin: 0 auto;
-  outline: 1px solid red;
-}
-
-/* 로우 영역 */
-/* header *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
