@@ -29,22 +29,18 @@
   font-size: 17px;
   font-weight: 400;
 }
-#header #header_gnb {
-  border-top: 1px solid #dedede;
-  border-bottom: 1px solid #dedede;
+#header #header_top .row {
+  display: flex;
+  align-items: flex-end;
+  padding: 24px 0;
 }
-#header #header_top .row, #header #header_gnb .row {
+#header #header_gnb .row {
   display: flex;
   align-items: center;
 }
-#header #header_top .row {
-  align-items: flex-end;
-}
-#header #header_top .row {
-  padding: 24px 0;
-}
-#header #header_top .top_slog, #header #header_gnb .gnb_user {
-  margin-left: auto;
+#header #header_gnb {
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
 }
 
 #header_top .top_logo a img {
@@ -78,6 +74,54 @@
   margin-top: 2px;
 }
 
+#header_top .top_user {
+  margin-left: auto;
+}
+
+#header_top .top_user ul li {
+  display: inline-block;
+  position: relative;
+}
+
+#header_top .top_user ul li a {
+  padding: 0 24px;
+  position: relative;
+}
+
+#header_top .top_user ul li a img {
+  width: 24px;
+}
+
+#header_top .top_user ul li a strong {
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  font-size: 10px;
+  display: inline-block;
+  color: #fff;
+  padding: 0 5px;
+}
+
+#header_top .top_user ul li.bt_user a strong {
+  background: #444;
+  min-width: 15px;
+  height: 18px;
+  border-radius: 8.5px;
+  top: 12px;
+  right: 4px;
+  line-height: 18px;
+}
+
+#header_top .top_user ul li.bt_cart a strong {
+  min-width: 20px;
+  height: 20px;
+  background: #ec1a3b;
+  border-radius: 50%;
+  line-height: 20px;
+  top: 9px;
+  right: 14px;
+}
+
 #header_gnb .gnb_btn .lineMenu {
   width: 50px;
   height: 50px;
@@ -91,48 +135,53 @@
   padding: 0 24px;
 }
 
-#header_gnb .gnb_user ul li {
-  display: inline-block;
+#header_gnb .gnb_rank {
+  margin-left: auto;
+}
+
+#header_gnb .gnb_rank a {
+  font-size: 1.3rem;
+}
+
+#header_gnb .gnb_rank .rank_list {
+  width: 260px;
+  height: 40px;
+  overflow: hidden;
+  outline: 1px solid red;
   position: relative;
 }
 
-#header_gnb .gnb_user ul li a {
-  padding: 0 24px;
-  position: relative;
-}
-
-#header_gnb .gnb_user ul li a img {
-  width: 24px;
-}
-
-#header_gnb .gnb_user ul li a strong {
+#header_gnb .gnb_rank .rank_list strong {
   position: absolute;
-  font-weight: bold;
-  text-align: center;
-  font-size: 10px;
+  right: 0;
+  top: 8px;
+}
+
+#header_gnb .gnb_rank .rank_list ol li {
+  padding: 12px 0;
+  outline: 1px solid red;
+}
+
+#header_gnb .gnb_rank .rank_list ol li span {
   display: inline-block;
-  color: #fff;
-  padding: 0 5px;
+  width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
-#header_gnb .gnb_user ul li.bt_user a strong {
-  background: #444;
-  min-width: 15px;
-  height: 18px;
-  border-radius: 8.5px;
-  top: 12px;
-  right: 4px;
-  line-height: 18px;
+#header_gnb .gnb_rank .rank_list ol li span em {
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+  margin-right: 12px;
+  color: #97BF42;
 }
 
-#header_gnb .gnb_user ul li.bt_cart a strong {
-  min-width: 20px;
-  height: 20px;
-  background: #ec1a3b;
-  border-radius: 50%;
-  line-height: 20px;
-  top: 9px;
-  right: 14px;
+#header_gnb .gnb_rank .rank_all {
+  background: blue;
+  display: none;
 }
 
 /* 레이아웃 */
