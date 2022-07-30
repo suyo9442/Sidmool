@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* main */
+#main_slide {
+    position: relative;
+}
+
+.single-item {
+    height: 750px;
+}
+
+.single-item .slick-item {
+    width: 100%;
+}
+
+.single-item .slick-item img {
+    width: 100%;
+    height: 750px;
+}
+
+
+
+
+
+
+.single-item .slick-prev,
+.slick-next {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    background: url('../img/down-arrow.png') no-repeat center;
+    background-size: 60px 60px;
+    opacity: 0.2;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.single-item .slick-prev {
+    left: 2%;
+    transform: rotate(90deg);
+}
+
+.single-item .slick-next {
+    right: 2%;
+    transform: rotate(270deg);
+}
