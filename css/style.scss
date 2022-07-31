@@ -459,74 +459,7 @@ $es-medium: 32px;
     box-shadow: 3.3px 3.7px 9.7px 0.3px #ddd;
 }
 
-#line_list .list {
-    display: flex;
-    justify-content: space-between;
-}
 
-#line_list .list .list_item {
-    width: 23.8%;
-    background: $sub-color02;
-    border-radius: 10px;
-    padding: 12px;
-    position: relative;
-}
-
-#line_list .list .list_item .list_img {
-    position: relative;
-}
-
-#line_list .list .list_item .list_img img {
-    width: 100%;
-    border-radius: 10px;
-    min-height: 360px;
-    margin-bottom: 50px;
-}
-
-#line_list .list .list_item .list_desc {
-    width: calc(100% - 24px);
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    position: absolute;
-    bottom: 12px;
-    box-shadow: 3.3px 3.7px 9.7px 0.3px #ddd;
-}
-
-#line_list .list .list_item .list_desc .prodDesc a {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-#line_list .list .list_item .list_desc .prodDesc .desc {
-    font-size: 1.4rem;
-    color: #999999;
-}
-
-#line_list .list .list_item .list_desc .prodDesc .prodName {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
-#line_list .list .list_item .list_desc .prodPrice .price {
-    font-size: 2.4rem;
-    font-weight: 500;
-}
-
-#line_list .list .list_item .list_desc .prodPrice .price span {
-    font-size: 1.4rem;
-    margin: 0 4px;
-}
-
-#line_list .list .list_item .list_desc .prodPrice .discount {
-    margin-right: 10px;
-    color: #999999;
-    text-decoration: line-through;
-}
 
 
 /* layBanner */
