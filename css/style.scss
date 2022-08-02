@@ -338,7 +338,7 @@ $es-medium: 32px;
     max-width: 1420px;
     margin: 0 auto;
     }
-    .row {
+    .row:not(#main .row) {
         padding: 70px 0;
     }
 }
@@ -589,12 +589,13 @@ $es-medium: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 #eventProd #event_tit .tit_banner {
-    width: calc(60% - 32px);
+    width: calc(55% - 48px);
 }
 #eventProd #event_tit .tit_desc {
-    width: 40%;
+    width: 45%;
 }
 #eventProd #event_tit .tit_banner img {
     border-radius: 10px;
@@ -614,5 +615,105 @@ $es-medium: 32px;
     color: $main-color;
     display: inline-block;
     margin-bottom: 24px;
+}
+#eventProd #event_list .event_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#eventProd #event_list .event_wrap .event_item {
+    width: calc(50% - 16px);
+    height: 200px;
+    border-radius: 10px;
+    background: #ffffff;
+    display: flex;
+    margin-bottom: 32px;
+}
+#eventProd #event_list .event_wrap .event_item .img {
+    width: 30%;
+    box-shadow: rgb(240, 240, 240) 1px 1px 10px;
+}
+#eventProd #event_list .event_wrap .event_item .img a {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+#eventProd #event_list .event_wrap div:nth-child(1) .img a {
+    background: url('../img/elements/mugiza01.jpeg') no-repeat center;
+    background-size: cover;
+}
+#eventProd #event_list .event_wrap div:nth-child(2) .img a {
+    background: url('../img/elements/mugiza02.jpeg') no-repeat center;
+    background-size: cover;
+}
+#eventProd #event_list .event_wrap div:nth-child(3) .img a {
+    background: url('../img/elements/mugiza03.jpeg') no-repeat center;
+    background-size: cover;
+}
+#eventProd #event_list .event_wrap div:nth-child(4) .img a {
+    background: url('../img/elements/mugiza04.jpg') no-repeat center;
+    background-size: cover;
+}
+// #eventProd #event_list .event_wrap .event_item .img {
+//     border-radius: 10px;
+//     height: 200px;
+// }
+#eventProd #event_list .event_wrap .event_item .desc {
+    width: 70%;
+    padding: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#eventProd #event_list .event_wrap .event_item .desc strong {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+#eventProd #event_list .event_wrap .event_item .desc a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 20px;
+}
+#eventProd #event_list .event_wrap .event_item .desc p {
+    margin-top: auto;
+}
+#eventProd #event_list .event_wrap .event_item .desc p strong {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ec1a3b;
+    margin-right: 18px;
+}
+#eventProd #event_list .event_wrap .event_item .desc p em {
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    margin-right: 6px;
+}
+#eventProd #event_list .event_wrap .event_item .desc p span {
+    font-size: 2rem;
+    font-weight: 800;
+}
+#eventProd #event_list .event_wrap .event_item .desc .button {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+#eventProd #event_list .event_wrap .event_item .desc .button .bt {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    border-radius: 5px;
+    background: $main-color;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+}
+#eventProd #event_list .event_wrap .event_item .desc .button svg {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    stroke: #fff;
 }
 /*# sourceMappingURL=style.css.map */
