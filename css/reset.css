@@ -9,6 +9,7 @@ a {text-decoration:none;color: inherit; display: block;}
 table {border-collapse:collapse;border-spacing:0}
 ul, li, ol {list-style: none;}
 fieldset, img {border: 0 none; vertical-align: top;}
+b {font-weight: 500;}
 /* input style */
 input {background-image: none;}
 input[type=button],

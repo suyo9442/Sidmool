@@ -1,31 +1,4 @@
 @charset "UTF-8";
-/* 상품 마크 표시 */
-.mark_plus, .mark_best {
-  width: 50px;
-  height: 50px;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 5px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.mark_plus em, .mark_best em {
-  color: #97BF42;
-}
-
-.mark_best {
-  background: #97BF42;
-  color: #fff;
-}
-
-.mark_plus {
-  border: 1px solid #C5E1A5;
-  background: #fff;
-}
-
 /* 스킵 메뉴 */
 #skip {
   position: relative;
@@ -294,7 +267,7 @@
 
 /** 컨텐츠 시작 **/
 /* 공통 */
-.sec .container {
+.sec .container:not(#main .container) {
   position: relative;
   max-width: 1420px;
   margin: 0 auto;
@@ -317,6 +290,90 @@
 }
 #tit span {
   font-weight: 100;
+}
+
+.mark_plus, .mark_best {
+  width: 50px;
+  height: 50px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mark_plus em, .mark_best em {
+  color: #97BF42;
+}
+
+.mark_best {
+  background: #97BF42;
+  color: #fff;
+}
+
+.mark_plus {
+  border: 1px solid #C5E1A5;
+  background: #fff;
+}
+
+/* 버튼 */
+#basic_btn {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.basic_btn {
+  display: inline-block;
+  width: 220px;
+  height: 50px;
+  line-height: 50px;
+  background: #97BF42;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.basic_btn span {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  margin-left: 14px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.basic_btn span svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #97BF42;
+}
+
+.basic_btn:hover {
+  background: #fff;
+  border: 1px solid #97BF42;
+  color: #97BF42;
+}
+
+.basic_btn:hover span {
+  background: #97BF42;
+}
+
+.basic_btn:hover span svg {
+  fill: #fff;
 }
 
 /* main */
@@ -418,6 +475,81 @@
 
 #banner_list > div img {
   border-radius: 10px;
+}
+
+/* introProd */
+#introProd {
+  background: url("../img/introBg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#intro_prod .intro_wrap {
+  margin: 30px 0;
+}
+
+#intro_prod .intro_wrap .intro_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+#intro_prod .intro_wrap .intro_list .img {
+  width: calc(50% - 80px);
+}
+
+#intro_prod .intro_wrap .intro_list .desc {
+  width: 50%;
+}
+
+#intro_prod .intro_wrap .intro_list .img img {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px 0px 0 10px;
+  box-shadow: 3.3px 3.7px 9.7px 0.3px rgb(244, 244, 244);
+}
+
+#intro_prod .intro_wrap .intro_list .desc .descTit {
+  margin-bottom: 50px;
+}
+
+#intro_prod .intro_wrap .intro_list .desc .descTit h4 {
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: "Cairo", sans-serif;
+}
+
+#intro_prod .intro_wrap .intro_list .desc .descTit p {
+  margin-top: -8px;
+}
+
+#intro_prod .intro_wrap .intro_list .desc .descCont strong {
+  font-size: 2rem;
+  margin-bottom: 14px;
+  color: #97BF42;
+  font-weight: 700;
+}
+
+#intro_prod .intro_wrap .intro_list .desc .descCont strong .line {
+  display: inline-block;
+  width: 56px;
+  height: 1px;
+  background: #97BF42;
+  vertical-align: middle;
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+#intro_prod .intro_wrap .intro_list .desc .descCont span {
+  display: block;
+  font-size: 3.8rem;
+  margin-bottom: 18px;
+}
+
+#intro_prod .intro_wrap .intro_list .desc .descCont p {
+  font-size: 1.6rem;
+  margin-bottom: 72px;
 }
 
 /* bestReview */
@@ -534,10 +666,6 @@
 }
 
 /* mouthProd */
-#eventProd {
-  background: #EFEBE9;
-}
-
 #eventProd #event_tit {
   display: flex;
   justify-content: space-between;
@@ -555,6 +683,7 @@
 
 #eventProd #event_tit .tit_banner img {
   border-radius: 10px;
+  box-shadow: 3.3px 3.7px 9.7px 0.3px rgb(242, 242, 242);
 }
 
 #eventProd #event_tit .tit_desc strong {
@@ -586,7 +715,7 @@
   width: calc(50% - 16px);
   height: 200px;
   border-radius: 10px;
-  background: #ffffff;
+  background: #f4f4f4;
   display: flex;
   margin-bottom: 32px;
 }

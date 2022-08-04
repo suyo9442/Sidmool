@@ -4,63 +4,85 @@
 #main_slide {
     position: relative;
 }
-
-.single-item {
+.single-item1 {
     height: 750px;
 }
-
-.single-item .slick-item {
+.single-item1 .slick-item {
     width: 100%;
+    position: relative;
 }
-
-.single-item .slick-item img {
-    width: 100%;
+.single-item1 .slick-item a {
     height: 750px;
 }
-
-.single-item .slick-prev,
-.single-item .slick-next {
+.single-item1 .slick-item:nth-child(1) a {
+    background: url('../img/main_slide/main01.jpg') no-repeat center;
+    background-size: cover;
+}
+.single-item1 .slick-item:nth-child(2) a {
+    background: url('../img/main_slide/main02.jpg') no-repeat center;
+    background-size: cover;
+}
+.single-item1 .slick-item:nth-child(3) a {
+    background: url('../img/main_slide/main03.jpg') no-repeat center;
+    background-size: cover;
+}
+.single-item1 .slick-item .item_cell {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.single-item1 .slick-item .item_cell > div:nth-child(1) {
+    width: 60%;
+}
+.single-item1 .slick-item .item_cell > div:nth-child(2) {
+    width: 40%;
+}
+.single-item1 .slick-item .item_cell .p1 {
+    font-size: 3.6rem;
+    margin-bottom: 12px;
+}
+.single-item1 .slick-item .item_cell .p2 {
+    font-size: 1.8rem;
+    margin-bottom: 72px;
+}
+.single-item1 .slick-prev,
+.single-item1 .slick-next {
     width: 100px;
     height: 100px;
-    background: red;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
     z-index: 999;
     background: url('../img/down-arrow.png') no-repeat center;
-    background-size: 60px 60px;
-    opacity: 0.2;
+    background-size: 50px 50px;
+    opacity: 0.1;
     text-indent: -999px;
     overflow: hidden;
 }
-
-.single-item .slick-prev {
+.single-item1 .slick-prev {
     left: 2%;
     transform: rotate(90deg);
 }
-
-.single-item .slick-next {
+.single-item1 .slick-next {
     right: 2%;
     transform: rotate(270deg);
 }
-
-
 
 
 /* lineProd */
 .list_slider {
     position: relative;
 }
-
 /* 사이 여백 늘이고 줄이기 */
 .list_slider .slick-slide {
     margin: 0 16px;
 }
-
 .list_slider .slick-list {
     margin: 0 -16px;
 }
-
 .list_slider .back {
     position: absolute;
     top: 0;
@@ -68,13 +90,11 @@
     right: 0;
     bottom: 0;
 }
-
 .list_slider .back-con {
     position: relative;
     width: 100%;
     height: 100%;
 }
-
 .list_slider .list_item {
     height: 450px;
     background: #EFEBE9;
@@ -82,18 +102,15 @@
     padding: 12px;
     position: relative;
 }
-
 .list_slider .list_item .list_img {
     position: relative;
 }
-
 .list_slider .list_item .list_img img {
     width: 100%;
     border-radius: 10px;
     min-height: 320px;
     margin-bottom: 50px;
 }
-
 .list_slider .list_item .list_desc {
     width: 100%;
     background: #fff;
@@ -104,18 +121,15 @@
     bottom: 0;
     box-shadow: 3.3px 3.7px 9.7px 0.3px #ddd;
 }
-
 .list_slider .list_item .list_desc .prodDesc a {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
-
 .list_slider .list_item .list_desc .prodDesc .desc {
     font-size: 1.4rem;
     color: #999999;
 }
-
 .list_slider .list_item .list_desc .prodDesc .prodName {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -123,24 +137,47 @@
     font-size: 1.8rem;
     font-weight: 500;
 }
-
 .list_slider .list_item .list_desc .prodPrice .price {
     font-size: 2.4rem;
     font-weight: 500;
 }
-
 .list_slider .list_item .list_desc .prodPrice .price span {
     font-size: 1.4rem;
     margin: 0 4px;
 }
-
 .list_slider .list_item .list_desc .prodPrice .discount {
     margin-right: 10px;
     color: #999999;
     text-decoration: line-through;
 }
-
 .list_slider .slick-prev,
 .list_slider .slick-next {
     display: none !important;
+}
+
+
+/* intro_prod */
+.one-time .slick-prev,
+.one-time .slick-next {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    background: url('../img/down-arrow.png') no-repeat center;
+    background-size: 50px 50px;
+    opacity: 0.1;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.one-time .slick-prev {
+    left: -10%;
+    transform: rotate(90deg);
+}
+
+.one-time .slick-next {
+    right: -10%;
+    transform: rotate(270deg);
 }
