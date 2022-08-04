@@ -2,7 +2,7 @@
 
 $main-color: #97BF42;
 $sub-color01: #C5E1A5;
-$sub-color02: #EFEBE9;
+$sub-color02: #f5f3f3;
 $gry-color: #dedede;
 $es-small: 24px;
 $es-medium: 32px;
@@ -11,7 +11,6 @@ $es-medium: 32px;
 /* 스킵 메뉴 */
 #skip {
     position: relative;
-
     a {
         position: absolute;
         left: 0;
@@ -40,23 +39,19 @@ $es-medium: 32px;
         max-width: 1420px;
         margin: 0 auto;
     }
-
     a {
         font-size: 17px;
         font-weight: 400;
     }
-
     #header_top .row {
         display: flex;
         align-items: flex-end;
         padding: 24px 0;
     }
-
     #header_gnb .row {
         display: flex;
         align-items: center;
     }
-
     #header_gnb {
         border-top: 1px solid $gry-color;
         border-bottom: 1px solid $gry-color;
@@ -266,25 +261,22 @@ $es-medium: 32px;
     max-width: 1420px;
     margin: 0 auto;
     }
-    .row:not(#main .row) {
-        padding: 70px 0;
+    .row:not(#main .row, #footer .row) {
+        padding: 80px 0;
     }
 }
 // 타이틀
 #tit {
     text-align: center;
-
     h2 {
         font-size: 50px;
         font-weight: 500;
         margin-bottom: 16px;
     }
-
     h3 {
         font-size: 1.8rem;
         margin-bottom: 48px;
     }
-
     span {
         font-weight: 100;
     }
@@ -437,7 +429,7 @@ $es-medium: 32px;
     font-size: 1.8rem;
     font-weight: 600;
     color: #666;
-    background: rgb(251, 251, 251);
+    background: #ffffff;
     padding: 7px 24px;
     border-radius: 10px;
 }
@@ -451,17 +443,15 @@ $es-medium: 32px;
 }
 
 
-
-
 /* layBanner */
 #banner_list {
     display: flex;
     justify-content: space-between;
 }
-#banner_list>div {
-    width: 32%;
+#banner_list > div {
+    width: 31.6%;
 }
-#banner_list>div img {
+#banner_list > div img {
     border-radius: 10px;
 }
 
@@ -531,106 +521,9 @@ $es-medium: 32px;
 
 
 /* bestReview */
-#review_list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-#review_list .review_item {
-    width: calc(25% - 16px);
-    background: #fff;
-    box-shadow: rgb(241, 241, 241) 1px 1px 10px;
-}
-#review_list .review_item hr {
-    border: 1px solid #f4f4f4;
-    margin: 10px 0;
-}
-#review_list .review_item .item_img {
-    padding: 16px 16px 0 16px;
-}
-#review_list .review_item .item_img a {
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-}
-#review_list .review_item:nth-child(1) .item_img a {
-    background: url('../img/elements/review01.png') no-repeat center;
-    background-size: cover;
-}
-#review_list .review_item:nth-child(2) .item_img a {
-    background: url('../img/elements/review02.jpg') no-repeat center;
-    background-size: cover;
-}
-#review_list .review_item:nth-child(3) a {
-    background: url('../img/elements/review03.jpg') no-repeat center;
-    background-size: cover;
-}
-#review_list .review_item:nth-child(4) a {
-    background: url('../img/elements/review04.jpg') no-repeat center;
-    background-size: cover;
-}
-#review_list .review_item .item_desc {
-    padding: 16px;
-}
-#review_list .review_item .item_desc .desc_tit strong {
-    display: inline-block;
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-#review_list .review_item .item_desc .desc_tit p {
-    font-size: 1.5rem;
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
-#review_list .review_item .desc_score {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px 16px 16px;
-}
-#review_list .review_item .desc_score .score_img {
-    width: 30%;
-    margin-right: 10px;
-}
-#review_list .review_item .desc_score .score_rating {
-    width: calc(70% - 10px);
-}
-#review_list .review_item .desc_score .score_rating strong {
-    font-size: 1.7rem;
-    font-weight: 500;
-    width: 100%;
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-#review_list .review_item .desc_score .score_rating em {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-right: 6px;
-}
-#review_list .review_item .desc_score .score_rating .score {
-    text-indent: -9999px;
-    overflow: hidden;
-    display: inline-block;
-    width: 60px;
-    height: 20px;
-    background: transparent url("../img/elements/rating.svg") no-repeat left;
-    background-size: cover;
-    vertical-align: middle;
-    margin-top: 2px;
-}
 
 
-/* mouthProd */
-#eventProd {
-    // background: $sub-color02;
-}
+/* eventProd */
 #eventProd #event_tit {
     display: flex;
     justify-content: space-between;
@@ -672,7 +565,7 @@ $es-medium: 32px;
     width: calc(50% - 16px);
     height: 200px;
     border-radius: 10px;
-    background: #f4f4f4;
+    background: $sub-color02;
     display: flex;
     margin-bottom: 32px;
 }
@@ -701,10 +594,6 @@ $es-medium: 32px;
     background: url('../img/elements/mugiza04.jpg') no-repeat center;
     background-size: cover;
 }
-// #eventProd #event_list .event_wrap .event_item .img {
-//     border-radius: 10px;
-//     height: 200px;
-// }
 #eventProd #event_list .event_wrap .event_item .desc {
     width: 70%;
     padding: 24px;
@@ -762,5 +651,186 @@ $es-medium: 32px;
     height: 24px;
     display: inline-block;
     stroke: #fff;
+}
+
+
+/* serviceCenter */
+#serviceCenter {
+    background: $sub-color02;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #service_tit {
+        width: 35%;
+    }
+
+    #service_list {
+        width: 65%;
+    }
+}
+#service_tit {
+    h3 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    h3 em {
+        color: $main-color;
+    }
+    p {
+        font-size: 1.8rem;
+        margin-bottom: 50px;
+    }
+}
+#service_list .service_wrap {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        margin: 0 16px;
+        text-align: center;
+    }
+    li a {
+        background: #ffffff;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        line-height: 150px;
+        margin-bottom: 24px;
+        position: relative;
+    }
+    li a img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.8;
+    }
+    li strong {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    li p {
+        font-size: 1.4rem;
+        color: #777777;
+    }
+}
+
+
+/* notice */
+#notice {
+    #notice_banner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    #notice_banner > div {
+        width: calc(50% - 24px);
+    }
+    #notice_board {
+        display: flex;
+        justify-content: space-between;
+    }
+    #notice_board > div {
+        width: calc(50% - 24px);
+    }
+}
+#notice_banner img {
+    border-radius: 10px;
+}
+#notice_board {
+    .board {
+        position: relative;
+    }
+    .board h3 {
+        padding: 13px 0;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 36px;
+        border-bottom: 1px solid #777777;
+    }
+    .board .viewMore {
+        position: absolute;
+        top: 24px;
+        right: 0;
+        font-size: 1.5rem;
+    }
+    .board thead {
+        display: none;
+    }
+    .board tbody td {
+        width: 100%;
+        padding: 24px 10px;
+        border-bottom: 1px dotted #d8d8d8;
+    }
+    .board tbody td.title {
+        font-weight: 500;
+    }
+}
+
+
+/* footer */
+#footer {
+    background: $sub-color02;
+
+    .row {
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    #footer_menu {
+        width: calc(75% - 100px);
+    }
+    #footer_cs {
+        width: 25%;
+        display: flex;
+    }
+}
+#footer_menu {
+    ul {
+        border-bottom: 1px solid #d9d9d9;
+        margin-bottom: 40px;
+    }
+    ul li {
+        display: inline-block;
+    }
+    ul li:nth-child(even) {
+        color: #d9d9d9;
+    }
+    ul li a {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 16px 6px;
+    }
+    .info p span {
+        font-size: 1.3rem;
+        margin-right: 12px;
+    }
+}
+#footer_cs {
+    a {
+        width: 150px;
+        margin-bottom: 6px;
+    }
+    .cs {
+        margin-left: auto;
+    }
+    .csNumber {
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+    .csNumber span {
+        margin-right: 6px;
+    }
+    .csInfo span {
+        display: block;
+        font-size: 1.3rem;
+    }
 }
 /*# sourceMappingURL=style.css.map */
