@@ -18,6 +18,10 @@
     font-weight: 600;
     src: url('../font/NanumSquareEB.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Cairo';
+    src: url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap') format('truetype');
+}
 html {
     font-size: 62.5%;
 }

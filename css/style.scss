@@ -23,8 +23,8 @@ $es-medium: 32px;
         line-height: 30px;
         z-index: 1;
 
-        &.active,
-        &.focus {
+        &:active,
+        &:focus {
             top: 0;
         }
     }
@@ -132,58 +132,139 @@ $es-medium: 32px;
 
 // header_gnb
 #header_gnb .gnb_btn {
-    ul li.btn {
+    &:hover > .btn_box {
+        z-index: 1;
+        opacity: 1;
+    }
+    
+    .btn {
         width: 50px;
         height: 50px;
         border-radius: 5px;
         background: $main-color url('../img/menu.png') no-repeat center;
         background-size: 28px 28px;
     }
-    ul li.btn .lineBox {
+    .btn_box {
+        width: 1420px;
+        background: #ffffff;
+        border-radius: 0 0 10px 10px;
+        border-top: 1px solid $gry-color;
         display: flex;
-        width: 1280px;
-        position: relative;
+        justify-content: space-between;
+        position: absolute;
         top: 50px;
         left: 0;
-        outline: 1px solid red;
-        display: none;
-    }
-    ul li.btn .lineBox ul li .tit {
-        background: #EFEBE9;
-        width: 175px;
-        display: block;
-    }
-    ul li.btn .lineBox ul li .tit a {
-        padding: 22px 0px 22px 22px;
         transition: all 0.3s;
-        position: relative;
-    }
-    ul li.btn .lineBox ul li .tit a:before {
-        content: '';
-        width: 2px;
-        height: 70px;
-        background: $main-color;
-        position: absolute;
-        left: 0;
-        top: 0;
         opacity: 0;
     }
-    ul li.btn .lineBox ul li .tit a:hover {
-        background: #dedbd9;
+    .btn_box .newBox {
+        width: 15%;
+        padding: 40px;
     }
-    ul li.btn .lineBox ul li .tit a:hover:before {
+    .btn_box .newBox a {
+        width: 180px;
+        padding: 14px;
+        background: $sub-color02;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn_box .newBox a:hover {
+        background: #e4e4e4;
+    }
+    .btn_box .newBox a svg {
+        width: 18px;
+        height: 18px;
+        margin-top: 2px;
+    }
+    .btn_box .prodBox {
+        width: 65%;
+    }
+    .btn_box .banBox {
+        width: 20%;
+        padding: 40px;
+        border-left: 1px solid $gry-color;
+
+        img {
+            width: 100%;
+        }
+    }
+    .btn_box .prodBox {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    .btn_box .prodBox > li {
+        width: calc(25% - 24px);
+    }
+    .btn_box .prodBox > li .line {
+        width: 100%;
+        height: 1px;
+        background: $gry-color;
+        display: inline-block;
+        margin: 6px 0;
+    }
+    .btn_box .prodBox > li .desc {
+        margin-top: 12px;
+    }
+    .btn_box .prodBox > li .desc ol li {
+        display: inline-block;
+        width: calc(50% - 2px);
+    }
+    .btn_box .prodBox > li .desc ol li a {
+        font-size: 1.4rem;
+        padding: 6px 0;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+#header_gnb .gnb_menu {
+    ul li {
+        display: inline-block;
+        position: relative;
+    }
+    ul li a {
+        padding: 10px 24px;
+    }
+    ul li a:hover {
+        color: $main-color;
+    }
+    .menu_box ol {
+        position: absolute;
+        top: 49px;
+        left: 0;
+        background: #ffffff;
+        padding: 10px 0;
+        border-radius: 0 0 10px 10px;
+        transition: all 0.3s;
+        opacity: 0;
+    }
+    ul li:hover .menu_box ol{
         opacity: 1;
+        z-index: 1;
+    }
+    .menu_box ol li {
+        white-space: nowrap;
     }
 }
-#header_gnb .gnb_menu ul li {
-    display: inline-block;
-    padding: 0 24px;
-}
+
 #header_gnb .gnb_rank {
     margin-left: auto;
     position: relative;
+    &:hover .rank_all {
+        opacity: 1;
+        z-index: 1;
+    }
+
     a {
         font-size: 1.3rem;
+        &:hover {
+            color: $main-color;
+        }
     }
     .rank_list {
         width: 260px;
@@ -191,14 +272,11 @@ $es-medium: 32px;
         overflow: hidden;
         position: relative;
     }
-    .rank_list strong {
-        position: absolute;
-        right: 0;
-        top: 8px;
+    .rank_list ol {
+        transition: transform 0.3s;
     }
     .rank_list ol li {
         padding: 12px 4px;
-        outline: 1px solid red;
     }
     .rank_list ol li span {
         display: inline-block;
@@ -228,13 +306,12 @@ $es-medium: 32px;
     }
     .rank_all {
         background: #ffffff;
+        border-radius: 10px;
+        padding: 14px 5px;
         position: absolute;
         top: 40px;
         left: 0;
-        padding: 14px 5px;
-        border-radius: 8.5px;
-        box-shadow: rgb(241, 241, 241) 1px 1px 10px;
-        display: none;
+        opacity: 0;
     }
     .rank_all ul li {
         padding: 2px 0;
@@ -256,7 +333,6 @@ $es-medium: 32px;
         white-space: nowrap;
     }
 }
-
 
 
 /** 컨텐츠 시작 **/
@@ -679,7 +755,6 @@ $es-medium: 32px;
         justify-content: space-between;
 
     }
-
     #service_tit {
         width: 35%;
     }
