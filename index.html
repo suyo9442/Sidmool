@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
 
+    <!-- js -->
+    <script type="module" src="js/prodData.js"></script>
 
     <!-- favicon -->
 
@@ -621,33 +623,27 @@
                 <article id="line_tag">
                     <div class="tag_box">
                         <ol>
-                            <li>
+                            <li data-name="tab01">
                                 <a href="#">#주름탄력</a>
                             </li>
-                            <li>
+                            <li data-name="tab02">
                                 <a href="#">#닥터트럽</a>
                             </li>
-                            <li>
+                            <li data-name="tab03">
                                 <a href="#">#수분크림</a>
                             </li>
-                            <li>
+                            <li data-name="tab04">
                                 <a href="#">#미백관리</a>
                             </li>
-                            <li>
+                            <li data-name="tab05">
                                 <a href="#">#민중기</a>
-                            </li>
-                            <li>
-                                <a href="#">#데일리</a>
-                            </li>
-                            <li>
-                                <a href="#">#카렌듈라</a>
                             </li>
                         </ol>
                     </div>
                 </article>
                 <article id="line_list">
                     <div class="list_slider">
-                        <div class="list_item">
+                        <div class="list_item tab01 tab02">
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
@@ -671,7 +667,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list_item">
+                        <div class="list_item tab02 tab03">
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
@@ -697,7 +693,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list_item">
+                        <div class="list_item tab03 tab04">
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
@@ -721,7 +717,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list_item">
+                        <div class="list_item tab04 tab05">
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
@@ -744,22 +740,166 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="list_item">
+                        <div class="list_item tab05 tab01">
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/elements/list01_04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./img/elements/list01_05.png" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
                                             <div class="prodDesc">
                                                 <a href="#">
-                                                    <span class="desc">기능성 하이드로겔</span>
-                                                    <strong class="prodName">닥터트럽 기능성 하이드로겔 30g</strong>
+                                                    <span class="desc">피부 장벽관리와 미백, 주름개선</span>
+                                                    <strong class="prodName">민중기 IGF 미주탄 앰플 11ml</strong>
+                                                </a>
+                                            </div>
+                                            <div class="prodPrice">
+                                                <strong class="price">14,800<span>원</span></strong>
+                                                <span class="discount"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_item tab02 tab04 tab01">
+                            <div class="back-con">
+                                <div class="back">
+                                    <div class="list_img">
+                                        <a href="#"><img src="./img/elements/mugiza04.jpg" alt="product"></a>
+                                    </div>
+                                    <div class="list_desc">
+                                        <div>
+                                            <div class="prodDesc">
+                                                <a href="#">
+                                                    <span class="desc">ONLY 징크옥사이드 23%
+                                                    </span>
+                                                    <strong class="prodName">닥터트럽 징크자차 SPF35 PA+++ 50ml</strong>
+                                                </a>
+                                            </div>
+                                            <div class="prodPrice">
+                                                <strong class="price">21,800<span>원</span></strong>
+                                                <span class="discount"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_item tab02 tab03 tab05">
+                            <div class="back-con">
+                                <div class="back">
+                                    <div class="list_img">
+                                        <a href="#"><img src="./img/elements/list02_01.png" alt="product"></a>
+                                    </div>
+                                    <div class="list_desc">
+                                        <div>
+                                            <div class="prodDesc">
+                                                <a href="#">
+                                                    <span class="desc">데일리 모공 크림
+                                                    </span>
+                                                    <strong class="prodName">닥터트럽 포어 오프너 크림 60ml</strong>
+                                                </a>
+                                            </div>
+                                            <div class="prodPrice">
+                                                <strong class="price">16,800<span>원</span></strong>
+                                                <span class="discount"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_item tab04 tab01">
+                            <div class="back-con">
+                                <div class="back">
+                                    <div class="list_img">
+                                        <a href="#"><img src="./img/elements/list02_02.png" alt="product"></a>
+                                    </div>
+                                    <div class="list_desc">
+                                        <div>
+                                            <div class="prodDesc">
+                                                <a href="#">
+                                                    <span class="desc">피부 밸런스+피부결 개선
+                                                    </span>
+                                                    <strong class="prodName">닥터트럽 아하 10 바디 클렌져 200ml</strong>
+                                                </a>
+                                            </div>
+                                            <div class="prodPrice">
+                                                <strong class="price">18,900<span>원</span></strong>
+                                                <span class="discount"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_item tab05 tab03">
+                            <div class="back-con">
+                                <div class="back">
+                                    <div class="list_img">
+                                        <a href="#"><img src="./img/elements/prod03.png" alt="product"></a>
+                                    </div>
+                                    <div class="list_desc">
+                                        <div>
+                                            <div class="prodDesc">
+                                                <a href="#">
+                                                    <span class="desc">촉촉한 딥 클렌징
+                                                    </span>
+                                                    <strong class="prodName">닥터트럽 클렌징 밀크 200ml</strong>
+                                                </a>
+                                            </div>
+                                            <div class="prodPrice">
+                                                <strong class="price">13,600<span>원</span></strong>
+                                                <span class="discount"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_item tab01 tab03">
+                            <div class="back-con">
+                                <div class="back">
+                                    <div class="list_img">
+                                        <a href="#"><img src="./img/elements/list02_03.jpg" alt="product"></a>
+                                    </div>
+                                    <div class="list_desc">
+                                        <div>
+                                            <div class="prodDesc">
+                                                <a href="#">
+                                                    <span class="desc">과다 피지와 x기름 고민에 수딩 + 리페어
+                                                    </span>
+                                                    <strong class="prodName">닥터트럽 피지제로 센텔라파우더 5g</strong>
                                                 </a>
                                             </div>
                                             <div class="prodPrice">
                                                 <strong class="price">8,600<span>원</span></strong>
+                                                <span class="discount"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_item tab02 tab04">
+                            <div class="back-con">
+                                <div class="back">
+                                    <div class="list_img">
+                                        <a href="#"><img src="./img/elements/intro02.png" alt="product"></a>
+                                    </div>
+                                    <div class="list_desc">
+                                        <div>
+                                            <div class="prodDesc">
+                                                <a href="#">
+                                                    <span class="desc">매끄럽게 빛나는 피부결
+                                                    </span>
+                                                    <strong class="prodName">퓨어 비피다 95 앰플 33ml</strong>
+                                                </a>
+                                            </div>
+                                            <div class="prodPrice">
+                                                <strong class="price">24,600<span>원</span></strong>
                                                 <span class="discount"></span>
                                             </div>
                                         </div>
@@ -1092,6 +1232,31 @@
             </div>
         </div>
     </section>
+    <script type="module">
+        import {mugija} from './js/prodData.js';
+        
+        let eventItem = document.querySelectorAll('#event_list .event_item');
+        let title = document.querySelectorAll('#event_list .event_item .desc > a');
+        let price = document.querySelectorAll('#event_list .event_item .desc > p > span');
+        let salePercent = document.querySelectorAll('#event_list .event_item .desc > p > strong');
+        let salePrice = document.querySelectorAll('#event_list .event_item .desc > p > em');
+
+
+        for(let i = 0; i < eventItem.length; i++) {
+            binding(i);
+        }
+        function binding(a){
+            title[a].innerHTML = mugija[a].title;            
+            
+            salePercent[a].innerHTML = mugija[a].sale + '%';
+
+            let saleChan = mugija[a].price * (mugija[a].sale / 100);
+            salePrice[a].innerHTML = saleChan.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+
+            let priceChan = mugija[a].price - (mugija[a].price * (mugija[a].sale / 100));
+            price[a].innerHTML = priceChan.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+        }
+    </script>
 
     <!---- serviceCenter ---->
     <section id="serviceCenter" class="sec sec06">
@@ -1324,10 +1489,10 @@
     </footer>
 
 
-    <script src="js/main.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
         // main
         $('.single-item1').slick({
             infinite: true,
@@ -1335,6 +1500,7 @@
             fade: true,
             autoplayspeed: 400
         });
+        
         // lineProd
         $('.list_slider').slick({
             slidesToShow: 4,
@@ -1354,6 +1520,7 @@
                 }
             ]
         });
+
         // bestReview
         $('.review_slider').slick({
             slidesToShow: 4,

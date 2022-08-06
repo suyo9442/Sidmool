@@ -120,7 +120,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    box-shadow: 3.3px 3.7px 9.7px 0.3px #ddd;
+    box-shadow: 3.3px 3.7px 9.7px 0.3px rgb(236, 236, 236);
 }
 .list_slider .list_item .list_desc .prodDesc a {
     display: flex;
