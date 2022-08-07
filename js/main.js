@@ -20,37 +20,38 @@ window.onload = function () {
     // rank();
 
 
+    /***** lineProd *****/
+    function lineFilter() {
+        let lineTab = document.querySelectorAll('#line_tag .tag_box ol li');
+        let listItem = document.querySelectorAll('#line_list .list_slider');
 
-    let lineTab = document.querySelectorAll('#line_tag .tag_box ol li');
-    let listItem = document.querySelectorAll('#line_list .list_slider');
+        $(lineTab).on('click', function (e) {
+            e.preventDefault();
 
+            let filter = $(this).data('name');
 
-    $(lineTab).on('click', function (e) {
-        e.preventDefault();
+            $(listItem).slick('slickUnfilter');
 
-        let filter = $(this).data('name');
-
-        $(listItem).slick('slickUnfilter');
-
-        if (filter == 'tab01') {
-            $(listItem).slick('slickFilter', '.tab01');
-        }
-        else if (filter == 'tab02') {
-            $(listItem).slick('slickFilter', '.tab02');
-        }
-        else if (filter == 'tab03') {
-            $(listItem).slick('slickFilter', '.tab03');
-        }
-        else if (filter == 'tab04') {
-            $(listItem).slick('slickFilter', '.tab04');
-        }
-        else if (filter == 'tab05') {
-            $(listItem).slick('slickFilter', '.tab05');
-        }
-        // else if (filter == 'all') {
-        //     $(".list_slider").slick('slickUnfilter');
-        // }
-    })
-
+            if (filter == 'doctor') {
+                $(listItem).slick('slickFilter', '.doctor');
+            }
+            else if (filter == 'minJung') {
+                $(listItem).slick('slickFilter', '.minJung');
+            }
+            else if (filter == 'mugija') {
+                $(listItem).slick('slickFilter', '.mugija');
+            }
+            else if (filter == 'acbye') {
+                $(listItem).slick('slickFilter', '.acbye');
+            }
+            else if (filter == 'saccharo') {
+                $(listItem).slick('slickFilter', '.saccharo');
+            }
+            else if (filter == 'all') {
+                $(".list_slider").slick('slickUnfilter');
+            }
+        })
+    }
+    lineFilter();
 }
 
