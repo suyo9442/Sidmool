@@ -6,9 +6,10 @@ $sub-color02: #f5f3f3;
 $gry-color: #dedede;
 $es-small: 24px;
 $es-medium: 32px;
+$radius-basic: 10px;
 
 
-/* 스킵 메뉴 */
+/****** 스킵 메뉴 ******/
 #skip {
     position: relative;
     a {
@@ -31,8 +32,7 @@ $es-medium: 32px;
 }
 
 
-
-/* header */
+/****** header ******/
 #header {
     .container {
         position: relative;
@@ -147,7 +147,7 @@ $es-medium: 32px;
     .btn_box {
         width: 1420px;
         background: #ffffff;
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 $radius-basic $radius-basic;
         border-top: 1px solid $gry-color;
         display: flex;
         justify-content: space-between;
@@ -239,7 +239,7 @@ $es-medium: 32px;
         left: 0;
         background: #ffffff;
         padding: 10px 0;
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 $radius-basic $radius-basic;
         transition: all 0.3s;
         opacity: 0;
     }
@@ -306,7 +306,7 @@ $es-medium: 32px;
     }
     .rank_all {
         background: #ffffff;
-        border-radius: 10px;
+        border-radius: $radius-basic;
         padding: 14px 5px;
         position: absolute;
         top: 40px;
@@ -335,8 +335,8 @@ $es-medium: 32px;
 }
 
 
-/** 컨텐츠 시작 **/
-/* 공통 */
+/******* 컨텐츠 시작 ******/
+// 공통 레이아웃
 .sec {
     .container:not(#main .container) {
     position: relative;
@@ -348,19 +348,21 @@ $es-medium: 32px;
     }
 }
 // 타이틀
-#tit {
+%tit {
     text-align: center;
     h2 {
-        font-size: 50px;
-        font-weight: 500;
-        margin-bottom: 16px;
-    }
-    h3 {
-        font-size: 1.8rem;
-        margin-bottom: 48px;
+        font-size: 3.2rem;
+        font-weight: 600;
+        margin-bottom: 6px;
     }
     span {
         font-weight: 100;
+    }
+}
+.main_tit {
+    @extend %tit;
+    h3 {
+        margin-bottom: 48px;
     }
 }
 
@@ -394,7 +396,7 @@ $es-medium: 32px;
     background: #fff;
 }
 
-/* 버튼 */
+// 버튼
 #basic_btn {
     margin-top: 50px;
     text-align: center;
@@ -410,7 +412,7 @@ $es-medium: 32px;
     font-size: 1.4rem;
     font-weight: 700;
     padding: 0 20px;
-    border-radius: 10px;
+    border-radius: $radius-basic;
     transition: all 0.3s;
     span {
         width: 24px;
@@ -448,7 +450,7 @@ $es-medium: 32px;
 
 
 
-/* main */
+/****** main ******/
 #main {
     position: relative;
 }
@@ -469,7 +471,7 @@ $es-medium: 32px;
     ul {
         height: 100%;
         border: 1px solid $sub-color02;
-        border-radius: 8.5px;
+        border-radius: $radius-basic;
     }
     ul li a {
         width: 100%;
@@ -496,14 +498,14 @@ $es-medium: 32px;
 
 
 
-/* lineProd */
+/****** lineProd ******/
 #line_tag {
     margin-bottom: 32px;
 }
 #line_tag .tag_box {
     background: $sub-color02;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: $radius-basic;
 }
 #line_tag .tag_box ol li {
     display: inline-block;
@@ -516,7 +518,7 @@ $es-medium: 32px;
     color: #666;
     background: #ffffff;
     padding: 7px 24px;
-    border-radius: 10px;
+    border-radius: $radius-basic;
 }
 #line_tag .tag_box ol li a:focus {
     box-shadow: 3.3px 3.7px 9.7px 0.3px #e4e4e4;
@@ -529,7 +531,7 @@ $es-medium: 32px;
 
 
 
-/* layBanner */
+/****** layBanner ******/
 #banner_list {
     display: flex;
     justify-content: space-between;
@@ -538,12 +540,12 @@ $es-medium: 32px;
     width: 31.6%;
 }
 #banner_list > div img {
-    border-radius: 10px;
+    border-radius: $radius-basic;
 }
 
 
 
-/* introProd */
+/****** introProd ******/
 #introProd {
     background: url('../img/introBg.jpg') no-repeat center;
     background-size: cover;
@@ -556,7 +558,7 @@ $es-medium: 32px;
     justify-content: space-between;
     align-items: center;
     background: #fff;
-    border-radius: 10px;
+    border-radius: $radius-basic;
 }
 #intro_prod .intro_wrap .intro_list .img{
     width: calc(50% - 80px);
@@ -567,7 +569,7 @@ $es-medium: 32px;
 #intro_prod .intro_wrap .intro_list .img img {
     width: 100%;
     height: 600px;
-    border-radius: 10px 0px 0 10px;
+    border-radius: $radius-basic 0px 0 $radius-basic;
     box-shadow: 3.3px 3.7px 9.7px 0.3px rgb(244, 244, 244);
 }
 #intro_prod .intro_wrap .intro_list .desc .descTit {
@@ -607,10 +609,10 @@ $es-medium: 32px;
 }
 
 
-/* bestReview */
+/****** bestReview ******/
 
 
-/* eventProd */
+/****** eventProd ******/
 #event_tit {
     display: flex;
     justify-content: space-between;
@@ -623,10 +625,8 @@ $es-medium: 32px;
     .tit_desc {
         width: 45%;
     }
-}
-#event_tit {
     .tit_banner img {
-        border-radius: 10px;
+        border-radius: $radius-basic;
         box-shadow: 3.3px 3.7px 9.7px 0.3px rgb(242, 242, 242);
     }
     .tit_desc strong {
@@ -655,7 +655,7 @@ $es-medium: 32px;
     .event_wrap .event_item {
         width: calc(50% - 16px);
         height: 200px;
-        border-radius: 10px;
+        border-radius: $radius-basic;
         background: $sub-color02;
         display: flex;
         margin-bottom: 32px;
@@ -667,7 +667,7 @@ $es-medium: 32px;
     .event_wrap .event_item .img a {
         width: 100%;
         height: 200px;
-        border-radius: 10px;
+        border-radius: $radius-basic;
     }
     .event_wrap div:nth-child(1) .img a {
         background: url('../img/products/mugiza00.jpeg') no-repeat center;
@@ -736,6 +736,14 @@ $es-medium: 32px;
         justify-content: center;
         align-items: center;
         margin: 0 4px;
+
+        &:hover {
+            background: #fff;
+            border: 1px solid $main-color;
+        }
+        &:hover > svg {
+            stroke: $main-color;
+        }
     }
     .event_wrap .event_item .desc .button svg {
         width: 24px;
@@ -746,7 +754,7 @@ $es-medium: 32px;
 }
 
 
-/* serviceCenter */
+/****** serviceCenter ******/
 #serviceCenter {
     background: $sub-color02;
 
@@ -758,7 +766,6 @@ $es-medium: 32px;
     #service_tit {
         width: 35%;
     }
-
     #service_list {
         width: 65%;
     }
@@ -785,7 +792,7 @@ $es-medium: 32px;
         margin: 0 16px;
         text-align: center;
     }
-    li a {
+    li .item_img {
         background: #ffffff;
         width: 150px;
         height: 150px;
@@ -794,7 +801,7 @@ $es-medium: 32px;
         margin-bottom: 24px;
         position: relative;
     }
-    li a img {
+    li .item_img img {
         width: 70px;
         height: 70px;
         position: absolute;
@@ -803,18 +810,18 @@ $es-medium: 32px;
         transform: translate(-50%, -50%);
         opacity: 0.8;
     }
-    li strong {
+    li .item_desc strong {
         font-size: 1.8rem;
         font-weight: 500;
     }
-    li p {
+    li .item_desc p {
         font-size: 1.4rem;
         color: #777777;
     }
 }
 
 
-/* notice */
+/****** notice ******/
 #notice {
     #notice_banner {
         display: flex;
@@ -833,7 +840,7 @@ $es-medium: 32px;
     }
 }
 #notice_banner img {
-    border-radius: 10px;
+    border-radius: $radius-basic;
 }
 #notice_board {
     .board {
@@ -866,7 +873,7 @@ $es-medium: 32px;
 }
 
 
-/* footer */
+/****** footer ******/
 #footer {
     background: $sub-color02;
 

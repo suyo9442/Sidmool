@@ -54,11 +54,14 @@
 <body>
     <!---- 스킵메뉴 ---->
     <div id="skip">
-        <a rel="bookmark" href="#movie">최신 영화 소식</a>
-        <a rel="bookmark" href="#event">새로운 이벤트</a>
-        <a rel="bookmark" href="#new">새로운 영화</a>
-        <a rel="bookmark" href="#movie">최신 영화 소식</a>
+        <a rel="bookmark" href="#lineProd">카테고리 추천제품</a>
+        <a rel="bookmark" href="#bestReview">베스트 리뷰</a>
+        <a rel="bookmark" href="#eventProd">입소문 제품</a>
+        <a rel="bookmark" href="#serviceCenter">쇼핑지원 안내</a>
+        <a rel="bookmark" href="#notice">시드물 공지사항</a>
     </div>
+    <!---- //스킵메뉴 ---->
+
 
     <!---- //header ----->
     <header id="header">
@@ -78,8 +81,8 @@
                                 <fieldset>
                                     <legend class="ir_su">검색폼</legend>
                                     <input class="sbarInput" type="text" id="search_form" title="어두워진 피부를 위한 트라넥사믹10 앰플"
-                                        placeholder="어두워진 피부를 위한 트라넥사믹10 앰플">
-                                    <input class="sbarBtn" type="image" src="./img/searchBar.png" title="검색" value="검색"
+                                        placeholder="어두워진 피부를 위한 사카로 광채앰플">
+                                    <input class="sbarBtn" type="image" src="../img/searchBar.png" title="검색" value="검색"
                                         alt="검색">
                                 </fieldset>
                             </div>
@@ -456,6 +459,8 @@
             </div>
         </article>
     </header>
+    <!---- //header ----->
+
 
     <!---- main ---->
     <main id="main">
@@ -610,13 +615,15 @@
             </div>
         </article>
     </main>
+    <!---- //main ---->
+
 
     <!---- lineProd ---->
     <section id="lineProd" class="sec sec01">
         <div class="container">
             <div class="row">
                 <span class="ir_pm">카테고리 추천제품</span>
-                <article id="tit">
+                <article class="main_tit">
                     <h2><span>카테고리 </span> 추천제품</h2>
                     <h3>고민 해결을 위해 시드물이 추천하는 제품</h3>
                 </article>
@@ -1162,7 +1169,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/elements/list01_04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./img/products/mugiza00.jpeg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1185,7 +1192,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/elements/list01_04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./img/products/mugija01.jpeg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1208,7 +1215,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/elements/list01_04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./img/products/mugiza02.jpeg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1231,7 +1238,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/elements/list01_04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./img/products/mugiza03.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1254,7 +1261,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/elements/list01_04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./img/products/mugiza04.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1575,6 +1582,8 @@
             price[a].innerHTML = saccharo[a].price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
         }
     </script>
+    <!---- //lineProd ---->
+
 
     <!---- layBanner ---->
     <section id="layBanner" class="sec sec02">
@@ -1600,13 +1609,15 @@
             </div>
         </div>
     </section>
+    <!---- //layBanner ---->
+
 
     <!---- bestReview ---->
     <section id="bestReview" class="sec sec03">
         <div class="container">
             <div class="row">
                 <span class="ir_pm">베스트 리뷰</span>
-                <article id="tit">
+                <article class="main_tit">
                     <h2><span>베스트 </span> 리뷰</h2>
                     <h3>시드물 베스트 리얼 포토후기</h3>
                 </article>
@@ -1765,13 +1776,15 @@
             </div>
         </div>
     </section>
+    <!---- //bestReview ---->
+
 
     <!---- eventProd ---->
     <section id="eventProd" class="sec sec05">
         <div class="container">
             <div class="row">
                 <span class="ir_pm">카테고리 추천제품</span>
-                <article id="tit">
+                <article class="main_tit">
                     <h2><span>입소문 </span>제품</h2>
                     <h3>꾸준히 팔리는 시드물만의 입소문난 제품</h3>
                 </article>
@@ -1919,6 +1932,8 @@
             price[a].innerHTML = priceChan.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
         }
     </script>
+    <!---- //eventProd ---->
+
 
     <!---- serviceCenter ---->
     <section id="serviceCenter" class="sec sec06">
@@ -1941,51 +1956,59 @@
                 <article id="service_list">
                     <ul class="service_wrap">
                         <li class="service_item">
-                            <a href="#">
+                            <a href="#" class="item_img">
                                 <img src="./img/elements/customer.png" alt="ingredient">
                             </a>
-                            <strong>성분사전</strong>
-                            <p>
-                                성분 정보를 위한 공간
-                            </p>
+                            <a href="#" class="item_desc">
+                                <strong>성분사전</strong>
+                                <p>성분 정보를 위한 공간</p>
+                            </a>
                         </li>
                         <li class="service_item">
-                            <a href="#">
+                            <a href="#" class="item_img">
                                 <img src="./img/elements/interpol.png" alt="
                                 communication">
                             </a>
-                            <strong>시드물 통신</strong>
-                            <p>
-                                시드물의 최근 활동 소개
-                            </p>
+                            <a href="#" class="item_desc">
+                                <strong>시드물 통신</strong>
+                                <p>시드물의 최근 활동 소개</p>
+                            </a>
                         </li>
                         <li class="service_item">
-                            <a href="#">
+                            <a href="#" class="item_img">
                                 <img src="./img/elements/speech-bubble.png" alt="Free Board">
                             </a>
-                            <strong>자유게시판</strong>
-                            <p>고객과의 소통을 위한 공간</p>
+                            <a href="#" class="item_desc">
+                                <strong>자유게시판</strong>
+                                <p>고객과의 소통을 위한 공간</p>
+                            </a>
                         </li>
                         <li class="service_item">
-                            <a href="#">
+                            <a href="#" class="item_img">
                                 <img src="./img/elements/woman.png" alt="QA">
                             </a>
-                            <strong>전 어떻게 써요?</strong>
-                            <p>피부타입별 고민을 위한 공간</p>
+                            <a href="#" class="item_desc">
+                                <strong>전 어떻게 써요?</strong>
+                                <p>피부타입별 고민을 위한 공간</p>
+                            </a>
                         </li>
                         <li class="service_item">
-                            <a href="#">
+                            <a href="#" class="item_img">
                                 <img src="./img/elements/money.png" alt="">
                             </a>
-                            <strong>미확인 입금</strong>
-                            <p>미확인된 입금 정보 공지</p>
+                            <a href="#" class="item_desc">
+                                <strong>미확인 입금</strong>
+                                <p>미확인된 입금 정보 공지</p>
+                            </a>
                         </li>
                     </ul>
                 </article>
             </div>
         </div>
     </section>
+    <!---- //serviceCenter ---->
 
+    
     <!---- notice ---->
     <section id="notice" class="sec sec06">
         <div class="container">
@@ -2085,7 +2108,10 @@
             </div>
         </div>
     </section>
+    <!---- //notice ---->
 
+
+    <!---- footer ---->
     <footer id="footer" class="sec">
         <div class="container">
             <div class="row">
@@ -2149,7 +2175,7 @@
             </div>
         </div>
     </footer>
-
+    <!---- //footer ---->
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
