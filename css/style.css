@@ -135,6 +135,7 @@
   top: 50px;
   left: 0;
   transition: all 0.3s;
+  z-index: -1;
   opacity: 0;
 }
 #header_gnb .gnb_btn .btn_box .newBox {
@@ -209,7 +210,10 @@
 #header_gnb .gnb_menu ul li a:hover {
   color: #97BF42;
 }
-#header_gnb .gnb_menu .menu_box ol {
+#header_gnb .gnb_menu ul li:hover .subMenu ol {
+  display: block;
+}
+#header_gnb .gnb_menu .subMenu ol {
   position: absolute;
   top: 49px;
   left: 0;
@@ -217,13 +221,10 @@
   padding: 10px 0;
   border-radius: 0 0 10px 10px;
   transition: all 0.3s;
-  opacity: 0;
-}
-#header_gnb .gnb_menu ul li:hover .menu_box ol {
-  opacity: 1;
   z-index: 1;
+  display: none;
 }
-#header_gnb .gnb_menu .menu_box ol li {
+#header_gnb .gnb_menu .subMenu ol li {
   white-space: nowrap;
 }
 
@@ -770,6 +771,10 @@
   margin-bottom: 24px;
   position: relative;
 }
+#service_list .service_wrap li .item_img:hover > img {
+  width: 80px;
+  height: 80px;
+}
 #service_list .service_wrap li .item_img img {
   width: 70px;
   height: 70px;
@@ -778,6 +783,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.8;
+  transition: all 0.3s;
 }
 #service_list .service_wrap li .item_desc strong {
   font-size: 1.8rem;

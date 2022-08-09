@@ -155,6 +155,7 @@ $radius-basic: 10px;
         top: 50px;
         left: 0;
         transition: all 0.3s;
+        z-index: -1;
         opacity: 0;
     }
     .btn_box .newBox {
@@ -233,7 +234,10 @@ $radius-basic: 10px;
     ul li a:hover {
         color: $main-color;
     }
-    .menu_box ol {
+    ul li:hover .subMenu ol{
+        display: block;
+    }
+    .subMenu ol {
         position: absolute;
         top: 49px;
         left: 0;
@@ -241,14 +245,12 @@ $radius-basic: 10px;
         padding: 10px 0;
         border-radius: 0 0 $radius-basic $radius-basic;
         transition: all 0.3s;
-        opacity: 0;
-    }
-    ul li:hover .menu_box ol{
-        opacity: 1;
         z-index: 1;
-    }
-    .menu_box ol li {
-        white-space: nowrap;
+        display: none;
+
+        li {
+            white-space: nowrap;
+        }
     }
 }
 
@@ -383,13 +385,11 @@ $radius-basic: 10px;
         color: $main-color;
     }
 }
-
 .mark_best {
     @extend %mark;
     background: $main-color;
     color: #fff;
 }
-
 .mark_plus {
     @extend %mark;
     border: 1px solid $sub-color01;
@@ -800,6 +800,11 @@ $radius-basic: 10px;
         line-height: 150px;
         margin-bottom: 24px;
         position: relative;
+
+        &:hover > img {
+            width: 80px;
+            height: 80px;
+        } 
     }
     li .item_img img {
         width: 70px;
@@ -809,6 +814,7 @@ $radius-basic: 10px;
         top: 50%;
         transform: translate(-50%, -50%);
         opacity: 0.8;
+        transition: all 0.3s;
     }
     li .item_desc strong {
         font-size: 1.8rem;

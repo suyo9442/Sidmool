@@ -10,14 +10,13 @@ window.onload = function () {
         setInterval(function () {
             if (rankOrder < rankItem.length - 1) {
                 rankOrder += 1;
-                console.log(rankOrder)
                 rankList.style.transform = 'translateY(' + rankOrder * -43.5 + 'px)';
             } else {
                 rankOrder = -1;
             }
         }, 3000)
     }
-    // rank();
+    rank();
 
 
     /***** lineProd *****/
