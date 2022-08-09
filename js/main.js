@@ -1,5 +1,4 @@
 window.onload = function () {
-
     /***** header *****/
     function rank() {
         let rankList = document.querySelector('.rank_list ol');
@@ -17,6 +16,13 @@ window.onload = function () {
         }, 3000)
     }
     rank();
+
+
+    /***** lineProd *****/
+    // 검색을 누르면
+    // input에 있는 값으로 
+    // search 리스트에 있는 아이템들을 검색
+
 
 
     /***** lineProd *****/
