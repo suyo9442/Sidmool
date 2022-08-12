@@ -1,16 +1,14 @@
-@charset "utf-8";
-@use 'style';
-
-
 // 공통 레이아웃
 .sec {
-    background: style.$sub-color02;
-    .row {
-        padding: 20px 0 !important;
+    .subP {
+        padding: 20px 0;
     }
 }
+.searchBg {
+    background: $sub-color02;
+}
 // 서브페이지 공통 타이틀
-.sub_tit {
+#sub_tit {
     @extend %tit;
     padding: 50px 0 0 0;
 }
@@ -19,7 +17,7 @@
 /******* searchBox  ******/
 #searchBox_bar {
     background: #ffffff;
-    border-radius: style.$radius-basic;
+    border-radius: $radius-basic;
     padding: 24px;
     text-align: center;
 
@@ -70,7 +68,7 @@
         }
         .keywordList > a {
             font-size: 13px;
-            background: style.$sub-color02;
+            background: $sub-color02;
             padding: 0 10px;
             border-radius: 15px;
             border: 1px solid #d9d9d9;
@@ -111,9 +109,9 @@
         .result_item {
             width: calc(100% / 4 - 2%);
             background: #fff;
-            border-radius: style.$radius-basic;
+            border-radius: $radius-basic;
             margin: 1%;
-            display: none;
+            // display: none;
 
             .list_img {
                 overflow: hidden;
@@ -129,7 +127,7 @@
                 }
             }
             .list_desc {
-                border-radius: style.$radius-basic;
+                border-radius: $radius-basic;
                 padding: 20px;
             }
             .list_desc > em {
@@ -155,7 +153,7 @@
                 height: 40px;
                 text-align: center;
                 border-radius: 5px;
-                background: style.$main-color;
+                background: $main-color;
                 float: right;
                 display: flex;
                 justify-content: center;
@@ -164,10 +162,10 @@
             
                 &:hover {
                     background: #fff;
-                    border: 1px solid style.$main-color;
+                    border: 1px solid $main-color;
                 }
                 &:hover > svg {
-                    stroke: style.$main-color;
+                    stroke: $main-color;
                 }
             }
             .list_desc p > a.bt > svg {
@@ -180,3 +178,4 @@
         
     }
 }
+

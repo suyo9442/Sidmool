@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +7,22 @@
     <meta name="author" content="fancy">
     <meta name="description" content="피부의 고향 시드물 사이트입니다.">
     <meta name="keywords" content="시드물, 화장품, 천연화장품">
-    <!-- 임시 메타 -->
+    <!-- 비공개 메타 (임시) -->
     <meta name="robots" content="noindex, nofollow" />
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link rel="stylesheet" type="text/css" href="../css/font.css">
-    <link rel="stylesheet" type="text/css" href="../css/search.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
 
     <!-- slick CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
 
     <!-- js -->
-    <script type="module" src="../js/prodData.js"></script>
+    <script type="module" src="../assets/js/prodData.mjs"></script>
 
     <!-- favicon -->
 
 
-    <title>피부의 고향 SIDMOOL ｜ 검색</title>
+    <title>피부의 고향 SIDMOOL ｜ 상세페이지</title>
 
     <!-- OG -->
     <!-- 페이스북 -->
@@ -53,17 +48,6 @@
 </head>
 
 <body>
-    <!---- 스킵메뉴 ---->
-    <div id="skip">
-        <a rel="bookmark" href="#lineProd">카테고리 추천제품</a>
-        <a rel="bookmark" href="#bestReview">베스트 리뷰</a>
-        <a rel="bookmark" href="#eventProd">입소문 제품</a>
-        <a rel="bookmark" href="#serviceCenter">쇼핑지원 안내</a>
-        <a rel="bookmark" href="#notice">시드물 공지사항</a>
-    </div>
-    <!---- //스킵메뉴 ---->
-
-
     <!---- //header ----->
     <header id="header">
         <article id="header_top">
@@ -72,40 +56,27 @@
                     <div class="top_logo">
                         <h1>
                             <a href="../index.html">
-                                <img src="../img/h1_logo.png" alt="sidmool" title="sidmool">
+                                <img src="../assets/img/h1_logo.png" alt="sidmool" title="sidmool">
                             </a>
                         </h1>
-                    </div>
-                    <div class="top_sbar">
-                        <form action="." method="post">
-                            <div class="sabr_cont">
-                                <fieldset>
-                                    <legend class="ir_su">검색폼</legend>
-                                    <input class="sbarInput" type="text" id="search_form" title="어두워진 피부를 위한 트라넥사믹10 앰플"
-                                        placeholder="어두워진 피부를 위한 사카로 광채앰플">
-                                        <input class="sbarBtn" type="image" src="../img/searchBar.png" title="검색" value="검색"
-                                        alt="검색">
-                                </fieldset>
-                            </div>
-                        </form>
                     </div>
                     <div class="top_user">
                         <ul>
                             <li class="bt_user">
                                 <a href="#">
-                                    <img src="../img/user.png" alt="user">
+                                    <img src="../assets/img/user.png" alt="user">
                                     <strong>OFF</strong>
                                 </a>
                             </li>
                             <li class="bt_cart">
                                 <a href="#">
-                                    <img src="../img/cart.png" alt="cart">
+                                    <img src="../assets/img/cart.png" alt="cart">
                                     <strong>0</strong>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <img src="../img/search.png" alt="search">
+                                <a href="../docs/search.html">
+                                    <img src="../assets/img/search.png" alt="search">
                                 </a>
                             </li>
                         </ul>
@@ -275,7 +246,7 @@
                             </ul>
                             <div class="banBox">
                                 <a href="#">
-                                    <img src="../img/elements/left_slide_banner_a02.png" alt="banner">
+                                    <img src="../assets/img/elements/left_slide_banner_a02.png" alt="banner">
                                 </a>
                             </div>
                         </div>
@@ -462,117 +433,203 @@
     </header>
     <!---- //header ----->
 
-    <section class="sub_tit sec">
+
+    <!---- //detailCont ----->
+    <section id="detailCont" class="sec">
         <div class="container">
             <div class="row">
-                <h2>SEARCH</h2>
-                <h3>검색으로 원하는 제품을 찾아보세요!</h3>
+                <article id="detail_tit">
+                    <div class="tit_img">
+                        <img src="" alt="product">
+                    </div>
+                    <div class="tit_desc">
+                        <strong style="color: #97BF42; font-weight: 500;">SIDMOOL</strong>
+                        <span class="tit"></span>
+                        <span class="desc"></span>
+                        <ul>
+                            <li class="line"></li>
+                            <li class="price">
+                                <span>판매가</span>
+                                <em></em>원
+                            </li>
+                            <li>
+                                <span>적립금</span>
+                                <em>2%</em>
+                            </li>
+                            <li>
+                                <span>원산지</span>
+                                <em>국내산</em>
+                            </li>
+                            <li>
+                                <span>배송비</span>
+                                <em>무료</em>
+                            </li>
+                            <li class="btnList">
+                                <button type="button" class="btn interest" onclick="location.href='주소';">
+                                    <img src="../assets/img/heart.png">
+                                </button>
+                                <button type="button" class="btn cart" onclick="location.href='주소';">
+                                    장바구니
+                                </button>
+                                <button type="button" class="btn buy" onclick="location.href='주소';">
+                                    BUY NOW
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
+    <!---- //detailCont ----->
 
-    <!---- searchBox ----->
-    <section id="searchBox" class="sec">
+    <section id="detailTab" class="sec">
         <div class="container">
             <div class="row">
-                <span class="ir_su">검색창</span>
-                <article id="searchBox_bar">
-                    <div class="search_wrap">
-                        <legend class="ir_su">검색폼</legend>
-                        <label for="searchBar" class="ir_su">검색창</label>
-                        <input id="searchBar" class="searchBar" type="text" name="searchBar" placeholder="찾으시는 제품을 검색해보세요" onkeypress="if(event.keyCode == 13) enter();">
-                        <a href="#" class="searchBtn"></a>
+                <article id="tab_list">
+                    <ul>
+                        <li class="active" data-idx="0">
+                            <a href="#">제품설명</a>
+                        </li>
+                        <li data-idx="1">
+                            <a href="#">제품리뷰</a>
+                        </li>
+                        <li data-idx="2">
+                            <a href="#">배송정보</a>
+                        </li>
+                    </ul>
+                </article>
+                <article id="tab_cont">
+                    <div class="cont_item">
+                        <img src="../assets/img/elements/dr_zinc_mask.jpg" alt="product">
                     </div>
-                    <div class="keyword_wrap">
-                        <div class="keyword clearfix">
-                            <span class="title">추천 키워드</span>
-                            <div class="keywordList">
-                                <a href="#">#크림</a>
-                                <a href="#">#닥터트럽</a>
-                                <a href="#">#민중기</a>
-                                <a href="#">#무기자차</a>
-                                <a href="#">#아크바이</a>
-                                <a href="#">#사카로</a>
+                    <div class="cont_item">
+                        <div class="review_wrap">
+                            <ul class="review_sort">
+                                <li class="active" data-name="all"><a href="#">전체리뷰 <em>(287)</em></a></li>
+                                <li data-name="photo"><a href="#">포토리뷰 <em>(232)</em></a></li>
+                            </ul>
+                            <div class="score">
+                                <div>
+                                    <span class="star">5.0</span>
+                                    <span>4.7 / 5.0</span>
+                                </div>
+                                <ul>
+                                    <li><a href="#">평점순</a></li>
+                                    <li style="color: #ddd;">｜</li>
+                                    <li><a href="#">최신순</a></li>
+                                </ul>
                             </div>
+                            <ul class="reviewCont">
+                                <li class="list all">
+                                    <div class="nickname">
+                                        <span class="star">5.0</span>
+                                        <span class="id" style="color: #777;">effy****</span>
+                                    </div>
+                                    <div class="cont">
+                                        <p>제품을 받았는데 용량도 엄청 큽니다 냄새도 너무나 좋습니다 앞으로는 이제품만 쓸거 같습니다 너무나 저렴한 가격에 너무나 좋은제품을 준비해주셔서 너무나 감사합니다 앞으로 자주 이 제품을 사용하고 싶습니다 너무나 감사합니다 제품 대박 좋아요</p>
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="date">
+                                        <span>2022.07.26</span>
+                                    </div>
+                                </li>
+                                <li class="list all photo">
+                                    <div class="nickname">
+                                        <span class="star">5.0</span>
+                                        <span class="id" style="color: #777;">dcpjs****</span>
+                                    </div>
+                                    <div class="cont">
+                                        <p>역시 최고에요
+                                            여름되고 모공도 늘어지고 피지조절 안되어 좁쌀 나고,,
+                                            피부 거칠어지고 등등 피부가 너무 안조아져서 샀어요!
+                                            역시 비싼 값 하네요…!
+                                            피부 톤 자체도 밝아지고 잡티가 없어지는 것 같아요
+                                            화장 안하고 선크림만 발르게 되네요 ㅎㅎ.</p>
+                                        <img src="../assets/img/elements/review01.png" alt="">
+                                    </div>
+                                    <div class="date">
+                                        <span>2022.07.26</span>
+                                    </div>
+                                </li>
+                                <li class="list all photo">
+                                    <div class="nickname">
+                                        <span class="star">5.0</span>
+                                        <span class="id" style="color: #777;">slrspa****</span>
+                                    </div>
+                                    <div class="cont">
+                                        <p>갑자기 목주름이 많이 생겨 사봤어요!
+                                            첨엔 가격땜에 망설였는데 사용법 따라 써보니 엄청 오래쓰네요 ㅋㅋㅋㅋ
+                                            비싼 가격절대 아니고 오히려 저렴한 것 같아요
+                                            첨에 너무 많이 발랏더니 목에 좁쌀 처럼 올라왔었는데
+                                            2방울만 넣으니 딱 좋네요 ㅎㅎ목주름 때메 쭉 사용할려구요!!!</p>
+                                        <img src="../assets/img/elements/review04.jpg" alt="product">
+                                    </div>
+                                    <div class="date">
+                                        <span>2022.07.26</span>
+                                    </div>
+                                </li>
+                                <li class="list all">
+                                    <div class="nickname">
+                                        <span class="star">5.0</span>
+                                        <span class="id" style="color: #777;">pigpark****</span>
+                                    </div>
+                                    <div class="cont">
+                                        <p>피지 많이 올라오는 극지성 피부예요.
+                                            고영양 크림이라 예상은 했는데 극지성피부가 여름에 쓰기에는 고보습이에요. 건성피부는 잘 맞을 거 같아요.
+                                            시드물 egf 좋다는 얘기를 많이 들어와서 궁금했는데 저녁에 자기 전에 발라주면 확실히 피부에 영양을 주고 진정되는 듯 해요.</p>
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="date">
+                                        <span>2022.07.26</span>
+                                    </div>
+                                </li>
+                                <li class="list all">
+                                    <div class="nickname">
+                                        <span class="star">5.0</span>
+                                        <span class="id" style="color: #777;">suyo****</span>
+                                    </div>
+                                    <div class="cont">
+                                        <p>또 주문..
+                                            스킨대용으로 너무 잘맞아서 잘쓰고있어요
+                                            촉촉하고 가벼워서 3스킨에 딱이고
+                                            트러블없이 제 피부에 찰떡처럼 잘맞아요
+                                            대만족 앞으로도 쭉 씁니다~~</p>
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="date">
+                                        <span>2022.07.26</span>
+                                    </div>
+                                </li>
+                                <li class="list all photo">
+                                    <div class="nickname">
+                                        <span class="star">5.0</span>
+                                        <span class="id" style="color: #777;">glaemfek****</span>
+                                    </div>
+                                    <div class="cont">
+                                        <p>얼굴피부가 건강하고 튼튼해졌어요~
+                                            발라도 끈적이지않고 쏙흡수되고 겉돌지않아 더욱 마음에들어요
+                                            각질제거나 레이저후 또는 피부가 예민해져있을때
+                                            2배정도더 발라주고 화장품 단계를 줄여주면 피부가 금방 회복해요
+                                            4개나 쟁여져있네요 든든해요ㅋㅋ
+                                            전후사진입니다~ 피부가 윤기가 돌면서 건강한혈색을 나타내네요ㅎ</p>
+                                        <img src="../assets/img/elements/review02.jpg" alt="products">
+                                    </div>
+                                    <div class="date">
+                                        <span>2022.07.26</span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="cont_item">
+                        <img src="../assets/img/elements/deliv00.jpg" alt="배송정보">
+                    </div>
                 </article>
             </div>
         </div>
+
     </section>
-    <!---- //searchBox ----->
-
-
-    <!---- searchRes ----->
-    <section id="searchRes" class="sec">
-        <div class="container">
-            <div class="row">
-                <article id="searchRes_sort">
-                    <p class="search_desc">
-                        '<span class="serchWord"></span>'에 대해 총 '<span class="searchNum"></span>'건이 검색되었습니다.
-                    </p>
-                    <ul>
-                        <li><a href="#">오름차순</a></li>
-                        <li>｜</li>
-                        <li><a href="#">내림차순</a></li>
-                        <li>｜</li>
-                        <li><a href="#">낮은가격순</a></li>
-                        <li>｜</li>
-                        <li><a href="#">높은가격순</a></li>
-                    </ul>
-                </article>
-                <article id="searchRes_list">
-                    <ul class="result_wrap">    
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
-    <script type="module">
-        import { doctor, minJung, acbye, mugija, saccharo, ETC } from '../js/prodData.js';
-        
-        let resultBinding = function(data) {
-            let searchBox = document.querySelector('#searchRes_list .result_wrap');
-
-            data.forEach((a, i) => {
-                let price = data[i].price;
-                let list = `
-                <li class="result_item">
-                    <div class="list_img">
-                        <a href="#">
-                            <img src="../img/products/${data[i].category}0${i}.jpg" alt="products">
-                        </a>
-                    </div>
-                    <div class="list_desc">
-                        <em>SIDMOOL</em>
-                        <a class="title">${data[i].title}</a>
-                        <strong class="price">${price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}</strong>&nbsp;원
-                        <p class="button clearfix">
-                            <a href="#" class="bt"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                                </svg></a>
-                            <a href="#" class="bt"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                </svg></a>
-                        </p>
-                    </div>
-                </li>`;
-                searchBox.insertAdjacentHTML('beforeend', list);
-            });
-            return data;
-        }
-        resultBinding(doctor);
-        resultBinding(minJung);
-        resultBinding(mugija);
-        resultBinding(acbye);
-        resultBinding(saccharo);
-        resultBinding(ETC);
-    </script>
-    <!---- //searchRes ----->
 
     <!---- footer ---->
     <footer id="footer" class="sec">
@@ -622,7 +679,7 @@
                 <div id="footer_cs">
                     <div class="cs">
                         <a href="#">
-                            <img src="../img/h1_logo_gray.png" alt="SIDMOOL">
+                            <img src="../assets/img/h1_logo_gray.png" alt="SIDMOOL">
                         </a>
                         <p class="csNumber">
                             <span>고객센터</span>
@@ -643,8 +700,8 @@
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
-    <script type="text/javascript" src="../js/search.js"></script>
+    <script type="text/javascript" src="../assets/js/main.js"></script>
+    <script type="text/javascript" src="../assets/js/products.js"></script>
 </body>
 
 </html>

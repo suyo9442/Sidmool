@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "sidmool",
+  "version": "1.0.0",
+  "description": "화장품 쇼핑몰 리뉴얼",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suyo9442/Sidmool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suyo9442/Sidmool/issues"
+  },
+  "homepage": "https://github.com/suyo9442/Sidmool#readme"
+}

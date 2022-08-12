@@ -7,20 +7,17 @@
     <meta name="author" content="fancy">
     <meta name="description" content="피부의 고향 시드물 사이트입니다.">
     <meta name="keywords" content="시드물, 화장품, 천연화장품">
-    <!-- 임시 메타 -->
+    <!-- 비공개 메타 (임시) -->
     <meta name="robots" content="noindex, nofollow" />
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/font.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
     <!-- slick CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
 
     <!-- js -->
-    <script type="module" src="js/prodData.js"></script>
+    <script type="module" src="js/prodData.mjs"></script>
 
     <!-- favicon -->
 
@@ -70,39 +67,27 @@
                     <div class="top_logo">
                         <h1>
                             <a href="">
-                                <img src="/img/h1_logo.png" alt="sidmool" title="sidmool">
+                                <img src="./assets/img/h1_logo.png" alt="sidmool" title="sidmool">
                             </a>
                         </h1>
-                    </div>
-                    <div class="top_sbar">
-                        <form action="." method="post">
-                            <div class="sabr_cont">
-                                <fieldset>
-                                    <legend class="ir_su">검색폼</legend>
-                                    <input class="sbarInput" type="text" id="search_form" title="어두워진 피부를 위한 트라넥사믹10 앰플"
-                                        placeholder="어두워진 피부를 위한 사카로 광채앰플">
-                                        <input class="sbarBtn" type="image" src="../img/searchBar.png" title="검색" value="검색" alt="검색" onClick="location.href='./routes/search.html'">
-                                </fieldset>
-                            </div>
-                        </form>
                     </div>
                     <div class="top_user">
                         <ul>
                             <li class="bt_user">
                                 <a href="#">
-                                    <img src="./img/user.png" alt="user">
+                                    <img src="./assets/img/user.png" alt="user">
                                     <strong>OFF</strong>
                                 </a>
                             </li>
                             <li class="bt_cart">
                                 <a href="#">
-                                    <img src="./img/cart.png" alt="cart">
+                                    <img src="./assets/img/cart.png" alt="cart">
                                     <strong>0</strong>
                                 </a>
                             </li>
                             <li>
-                                <a href="./routes/search.html">
-                                    <img src="./img/search.png" alt="search">
+                                <a href="./docs/search.html">
+                                    <img src="./assets/img/search.png" alt="search">
                                 </a>
                             </li>
                         </ul>
@@ -272,7 +257,7 @@
                             </ul>
                             <div class="banBox">
                                 <a href="#">
-                                    <img src="./img/elements/left_slide_banner_a02.png" alt="banner">
+                                    <img src="./assets/img/elements/left_slide_banner_a02.png" alt="banner">
                                 </a>
                             </div>
                         </div>
@@ -457,8 +442,7 @@
             </div>
         </article>
     </header>
-    <!---- //header ----->
-
+    
 
     <!---- main ---->
     <main id="main">
@@ -468,61 +452,61 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <em class="icon"><img src="./img/all.png"></em>
+                                <em class="icon"><img src="./assets/img/all.png"></em>
                                 <span>전체보기</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <em class="icon"><img src="./img/new.png"></em>
+                                <em class="icon"><img src="./assets/img/new.png"></em>
                                 <span>신제품</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <em class="icon"><img src="./img/skin.png"></em>
+                                <em class="icon"><img src="./assets/img/skin.png"></em>
                                 <span>스킨케어</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <em class="icon"><img src="./img/body.png"></em>
+                                <em class="icon"><img src="./assets/img/body.png"></em>
                                 <span>바디케어</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <em class="icon"><img src="./img/makeup.png"></em>
+                                <em class="icon"><img src="./assets/img/makeup.png"></em>
                                 <span>메이크업</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <em class="icon"><img src="./img/male.png"></em>
+                                <em class="icon"><img src="./assets/img/male.png"></em>
                                 <span>남성</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <em class="icon"><img src="./img/hair.png"></em>
+                                <em class="icon"><img src="./assets/img/hair.png"></em>
                                 <span>헤어제품</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <em class="icon"><img src="./img/prop.png"></em>
+                                <em class="icon"><img src="./assets/img/prop.png"></em>
                                 <span>화장소품</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <em class="icon"><img src="./img/mask.png"></em>
+                                <em class="icon"><img src="./assets/img/mask.png"></em>
                                 <span>마스크팩</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <em class="icon"><img src="./img/sale.png"></em>
+                                <em class="icon"><img src="./assets/img/sale.png"></em>
                                 <span>세트할인</span>
                             </a>
                         </li>
@@ -619,7 +603,7 @@
     <!---- lineProd ---->
     <section id="lineProd" class="sec sec01">
         <div class="container">
-            <div class="row">
+            <div class="row mainP">
                 <span class="ir_pm">카테고리 추천제품</span>
                 <article class="main_tit">
                     <h2><span>카테고리 </span> 추천제품</h2>
@@ -655,7 +639,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/doctor00.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/doctor00.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -678,7 +662,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/doctor01.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/doctor01.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -701,7 +685,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/doctor02.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/doctor02.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -724,7 +708,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/doctor03.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/doctor03.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -747,7 +731,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/doctor04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/doctor04.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -770,7 +754,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/doctor05.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/doctor05.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -793,7 +777,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/doctor06.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/doctor06.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -816,7 +800,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/doctor07.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/doctor07.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -841,7 +825,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/minJung00.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/minJung00.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -864,7 +848,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/minJung01.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/minJung01.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -887,7 +871,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/minJung02.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/minJung02.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -910,7 +894,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/minJung03.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/minJung03.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -933,7 +917,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/minJung04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/minJung04.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -956,7 +940,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/minJung05.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/minJung05.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -979,7 +963,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/minJung06.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/minJung06.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1002,7 +986,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/minJung07.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/minJung07.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1027,7 +1011,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/acbye00.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/acbye00.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1050,7 +1034,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/acbye01.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/acbye01.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1073,7 +1057,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/acbye02.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/acbye02.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1096,7 +1080,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/acbye03.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/acbye03.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1119,7 +1103,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/acbye04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/acbye04.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1142,7 +1126,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/acbye05.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/acbye05.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1167,7 +1151,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/mugija00.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/mugija00.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1190,7 +1174,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/mugija01.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/mugija01.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1213,7 +1197,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/mugija02.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/mugija02.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1236,7 +1220,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/mugija03.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/mugija03.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1259,7 +1243,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/mugija04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/mugija04.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1284,7 +1268,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/saccharo00.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/saccharo00.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1307,7 +1291,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/saccharo01.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/saccharo01.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1330,7 +1314,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/saccharo02.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/saccharo02.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1353,7 +1337,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/saccharo03.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/saccharo03.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1376,7 +1360,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/products/saccharo04.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/products/saccharo04.jpg" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1401,7 +1385,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/elements/list01_01.jpg" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/elements/list01_01.jpg" alt="product"></a>
                                         <span class="mark_best">BEST</span>
                                     </div>
                                     <div class="list_desc">
@@ -1425,7 +1409,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/elements/list01_02.png" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/elements/list01_02.png" alt="product"></a>
                                         <span class="mark_best">BEST</span>
                                     </div>
                                     <div class="list_desc">
@@ -1451,7 +1435,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/elements/list01_03.png" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/elements/list01_03.png" alt="product"></a>
                                         <span class="mark_plus">1 <em>+</em> 1</span>
                                     </div>
                                     <div class="list_desc">
@@ -1475,7 +1459,7 @@
                             <div class="back-con">
                                 <div class="back">
                                     <div class="list_img">
-                                        <a href="#"><img src="./img/elements/intro02.png" alt="product"></a>
+                                        <a href="#"><img src="./assets/img/elements/intro02.png" alt="product"></a>
                                     </div>
                                     <div class="list_desc">
                                         <div>
@@ -1501,7 +1485,7 @@
         </div>
     </section>
     <script type="module">
-        import { doctor, minJung, acbye, mugija, saccharo, ETC } from './js/prodData.js';
+        import { doctor, minJung, acbye, mugija, saccharo, ETC } from './assets/js/prodData.mjs';
 
         let doctorItem = document.querySelectorAll('#line_list .doctor:not(.slick-cloned)');
         let minJungItem = document.querySelectorAll('#line_list .minJung:not(.slick-cloned)');
@@ -1586,21 +1570,21 @@
     <!---- layBanner ---->
     <section id="layBanner" class="sec sec02">
         <div class="container">
-            <div class="row">
+            <div class="row mainP">
                 <article id="banner_list">
                     <div>
                         <a href="#">
-                            <img src="./img/elements/laybanner01.png" alt="banner">
+                            <img src="./assets/img/elements/laybanner01.png" alt="banner">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="./img/elements/laybanner03.png" alt="banner">
+                            <img src="./assets/img/elements/laybanner03.png" alt="banner">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="./img/elements/laybanner02.png" alt="banner">
+                            <img src="./assets/img/elements/laybanner02.png" alt="banner">
                         </a>
                     </div>
                 </article>
@@ -1613,7 +1597,7 @@
     <!---- bestReview ---->
     <section id="bestReview" class="sec sec03">
         <div class="container">
-            <div class="row">
+            <div class="row mainP">
                 <span class="ir_pm">베스트 리뷰</span>
                 <article class="main_tit">
                     <h2><span>베스트 </span> 리뷰</h2>
@@ -1626,7 +1610,7 @@
                                 <div class="back">
                                     <div class="item_img">
                                         <a href="#">
-                                            <img src="./img/elements/review01.png" alt="review">
+                                            <img src="./assets/img/elements/review01.png" alt="review">
                                         </a>
                                     </div>
                                     <div class="item_desc">
@@ -1639,7 +1623,7 @@
                                     <hr>
                                     <div class="desc_score">
                                         <div class="score_img">
-                                            <a href="#"><img src="./img/products/doctor01.jpg" alt="product"></a>
+                                            <a href="#"><img src="./assets/img/products/doctor01.jpg" alt="product"></a>
                                         </div>
                                         <div class="score_rating">
                                             <a>닥터트럽 징크크림 60g</a>
@@ -1654,7 +1638,7 @@
                                 <div class="back">
                                     <div class="item_img">
                                         <a href="#">
-                                            <img src="./img/elements/review02.jpg" alt="review">
+                                            <img src="./assets/img/elements/review02.jpg" alt="review">
                                         </a>
                                     </div>
                                     <div class="item_desc">
@@ -1668,7 +1652,7 @@
                                     <div class="desc_score">
                                         <div class="score_img">
                                             <a href="#">
-                                                <img src="./img/products/ETC07.jpg" alt="review">
+                                                <img src="./assets/img/products/ETC07.jpg" alt="review">
                                             </a>
                                         </div>
                                         <div class="score_rating">
@@ -1684,7 +1668,7 @@
                                 <div class="back">
                                     <div class="item_img">
                                         <a href="#">
-                                            <img src="./img/elements/review03.jpg" alt="review">
+                                            <img src="./assets/img/elements/review03.jpg" alt="review">
                                         </a>
                                     </div>
                                     <div class="item_desc">
@@ -1697,7 +1681,7 @@
                                     <hr>
                                     <div class="desc_score">
                                         <div class="score_img">
-                                            <a href="#"><img src="./img/products/doctor10.png" alt="product"></a>
+                                            <a href="#"><img src="./assets/img/products/doctor10.png" alt="product"></a>
                                         </div>
                                         <div class="score_rating">
                                             <a>닥터트럽 스킨 리터닝 클렌징 밀크</a>
@@ -1712,7 +1696,7 @@
                                 <div class="back">
                                     <div class="item_img">
                                         <a href="#">
-                                            <img src="./img/elements/review04.jpg" alt="review">
+                                            <img src="./assets/img/elements/review04.jpg" alt="review">
                                         </a>
                                     </div>
                                     <div class="item_desc">
@@ -1724,7 +1708,7 @@
                                     <hr>
                                     <div class="desc_score">
                                         <div class="score_img">
-                                            <a href="#"><img src="./img/products/ETC06.jpg" alt="product"></a>
+                                            <a href="#"><img src="./assets/img/products/ETC06.jpg" alt="product"></a>
                                         </div>
                                         <div class="score_rating">
                                             <a>스킨소스 디판테놀 앰플 32ml</a>
@@ -1739,7 +1723,7 @@
                                 <div class="back">
                                     <div class="item_img">
                                         <a href="#">
-                                            <img src="./img/elements/review05.jpg" alt="review">
+                                            <img src="./assets/img/elements/review05.jpg" alt="review">
                                         </a>
                                     </div>
                                     <div class="item_desc">
@@ -1751,7 +1735,7 @@
                                     <hr>
                                     <div class="desc_score">
                                         <div class="score_img">
-                                            <a href="#"><img src="./img/products/acbye01.jpg" alt="product"></a>
+                                            <a href="#"><img src="./assets/img/products/acbye01.jpg" alt="product"></a>
                                         </div>
                                         <div class="score_rating">
                                             <a>아크바이 딥 클렌징 워터</a>
@@ -1780,7 +1764,7 @@
     <!---- eventProd ---->
     <section id="eventProd" class="sec sec05">
         <div class="container">
-            <div class="row">
+            <div class="row mainP">
                 <span class="ir_pm">카테고리 추천제품</span>
                 <article class="main_tit">
                     <h2><span>입소문 </span>제품</h2>
@@ -1789,7 +1773,7 @@
                 <article id="event_tit">
                     <div class="tit_banner">
                         <a href="#">
-                            <img src="./img/elements/laybanner04.jpg" alt="banner">
+                            <img src="./assets/img/elements/laybanner04.jpg" alt="banner">
                         </a>
                     </div>
                     <div class="tit_desc">
@@ -1806,7 +1790,7 @@
                                 <a href="#"></a>
                             </div>
                             <div class="desc">
-                                <strong>SIDMOOL</strong>
+                                <strong style="color: #97BF42; font-weight: 500;">SIDMOOL</strong>
                                 <a href="#"></a>
                                 <p>
                                     <strong>30%</strong>
@@ -1829,7 +1813,7 @@
                                 <a href="#"></a>
                             </div>
                             <div class="desc">
-                                <strong>SIDMOOL</strong>
+                                <strong style="color: #97BF42; font-weight: 500;">SIDMOOL</strong>
                                 <a href="#">무기자차 데일리 썬밀크 SPF20 PA++</a>
                                 <p>
                                     <strong>30%</strong>
@@ -1852,7 +1836,7 @@
                                 <a href="#"></a>
                             </div>
                             <div class="desc">
-                                <strong>SIDMOOL</strong>
+                                <strong style="color: #97BF42; font-weight: 500;">SIDMOOL</strong>
                                 <a href="#">민중기 무기자차 썬블럭 SPF35 PA+++</a>
                                 <p>
                                     <strong>30%</strong>
@@ -1875,7 +1859,7 @@
                                 <a href="#"></a>
                             </div>
                             <div class="desc">
-                                <strong>SIDMOOL</strong>
+                                <strong style="color: #97BF42; font-weight: 500;">SIDMOOL</strong>
                                 <a href="#">닥터트럽 징크자차 SPF35 PA+++</a>
                                 <p>
                                     <strong>30%</strong>
@@ -1907,7 +1891,7 @@
         </div>
     </section>
     <script type="module">
-        import {mugija} from './js/prodData.js';
+        import {mugija} from './assets/js/prodData.mjs';
         let eventItem = document.querySelectorAll('#event_list .event_item');
 
         for(let i = 0; i < eventItem.length; i++) {
@@ -1936,7 +1920,7 @@
     <!---- serviceCenter ---->
     <section id="serviceCenter" class="sec sec06">
         <div class="container">
-            <div class="row">
+            <div class="row mainP">
                 <span class="ir_pm">쇼핑지원 안내</span>
                 <article id="service_tit">
                     <h3><em>SIDMOOL</em> 쇼핑지원 안내</h3>
@@ -1955,7 +1939,7 @@
                     <ul class="service_wrap">
                         <li class="service_item">
                             <a href="#" class="item_img">
-                                <img src="./img/elements/customer.png" alt="ingredient">
+                                <img src="./assets/img/elements/customer.png" alt="ingredient">
                             </a>
                             <a href="#" class="item_desc">
                                 <strong>성분사전</strong>
@@ -1964,7 +1948,7 @@
                         </li>
                         <li class="service_item">
                             <a href="#" class="item_img">
-                                <img src="./img/elements/interpol.png" alt="
+                                <img src="./assets/img/elements/interpol.png" alt="
                                 communication">
                             </a>
                             <a href="#" class="item_desc">
@@ -1974,7 +1958,7 @@
                         </li>
                         <li class="service_item">
                             <a href="#" class="item_img">
-                                <img src="./img/elements/speech-bubble.png" alt="Free Board">
+                                <img src="./assets/img/elements/speech-bubble.png" alt="Free Board">
                             </a>
                             <a href="#" class="item_desc">
                                 <strong>자유게시판</strong>
@@ -1983,7 +1967,7 @@
                         </li>
                         <li class="service_item">
                             <a href="#" class="item_img">
-                                <img src="./img/elements/woman.png" alt="QA">
+                                <img src="./assets/img/elements/woman.png" alt="QA">
                             </a>
                             <a href="#" class="item_desc">
                                 <strong>전 어떻게 써요?</strong>
@@ -1992,7 +1976,7 @@
                         </li>
                         <li class="service_item">
                             <a href="#" class="item_img">
-                                <img src="./img/elements/money.png" alt="">
+                                <img src="./assets/img/elements/money.png" alt="">
                             </a>
                             <a href="#" class="item_desc">
                                 <strong>미확인 입금</strong>
@@ -2010,17 +1994,17 @@
     <!---- notice ---->
     <section id="notice" class="sec sec06">
         <div class="container">
-            <div class="row">
+            <div class="row mainP">
                 <span class="ir_pm">주요 공지사항</span>
                 <article id="notice_banner">
                     <div>
                         <a href="#">
-                            <img src="./img/elements/notice_banner01.jpg" alt="banner">
+                            <img src="./assets/img/elements/notice_banner01.jpg" alt="banner">
                         </a>
                     </div>
                     <div>
                         <a href="#">
-                            <img src="./img/elements/notice_banner02.jpg" alt="banner">
+                            <img src="./assets/img/elements/notice_banner02.jpg" alt="banner">
                         </a>
                     </div>
                 </article>
@@ -2157,7 +2141,7 @@
                 <div id="footer_cs">
                     <div class="cs">
                         <a href="#">
-                            <img src="./img/h1_logo_gray.png" alt="SIDMOOL">
+                            <img src="./assets/img/h1_logo_gray.png" alt="SIDMOOL">
                         </a>
                         <p class="csNumber">
                             <span>고객센터</span>
@@ -2177,7 +2161,7 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript">
         // main
         $('.single-item1').slick({

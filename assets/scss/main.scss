@@ -1,0 +1,17 @@
+@charset "utf-8";
+$main-color: #97BF42;
+$sub-color01: #C5E1A5;
+$sub-color02: #f5f3f3;
+$gry-color: #dedede;
+$es-small: 24px;
+$es-medium: 32px;
+$radius-basic: 10px;
+
+
+@import './reset';
+@import './font';
+@import './home';
+@import './slick';
+@import './search';
+@import './products';
+
