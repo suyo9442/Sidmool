@@ -3,6 +3,7 @@ let searchFunc = function (searchKey, callback) {
     let serachItem = document.querySelectorAll('#searchRes_list .result_wrap .result_item');
     let searchWord = document.querySelector('#searchRes_sort .search_desc .serchWord');
     let searchNum = document.querySelector('#searchRes_sort .search_desc .searchNum');
+    let searchTit = document.querySelectorAll('#searchRes #searchRes_list .result_item .list_desc > a.title');
 
     serachItem.forEach(item => {
         let itemKey = item.textContent;
@@ -19,6 +20,29 @@ let searchFunc = function (searchKey, callback) {
 
     searchNum.innerHTML = document.querySelectorAll('.count').length;
     searchWord.innerHTML = searchKey;
+
+
+    let 오름차순 = document.getElementById('ascending');
+    오름차순.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // 상품명 배열 생성
+        let sortArr = [];
+
+        // Nodelist 텍스트 배열 넣기
+        for (let i = 0; i < searchTit.length; i++) {
+            sortArr.push(searchTit[i].innerHTML)
+        }
+
+        sortArr.sort(function (a, b) {
+            if (a < b) {
+                return -1
+            } else {
+                return 1
+            }
+        });
+        console.log(sortArr)
+    })
 
     callback();
 }
@@ -47,6 +71,32 @@ keyList.forEach((key, i) => {
         searchFunc(keyList[i].textContent.slice(1, 5), detailPage);
     })
 })
+
+
+// 정렬 기능
+
+
+// var 어레이 = ['가', '나', '다'];
+// function sortFunc(array) {
+//     array.sort(function (a, b) {
+//         if (a < b) {
+//             return 1
+//         } else {
+//             return -1
+//         }
+//     });
+// }
+// let 오름차순 = document.getElementById('ascending');
+// let 내림차순 = document.getElementById('descending');
+// 오름차순.addEventListener('click', function () {
+//     array.sort(function (a, b) {
+//         if (a < b) {
+//             return 1
+//         } else {
+//             return -1
+//         }
+//     });
+// })
 
 
 // 콜백: 상품정보 전송

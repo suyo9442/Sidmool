@@ -104,14 +104,13 @@
             display: flex;
             flex-wrap: wrap;
             margin: -1%;
-            
         }
         .result_item {
             width: calc(100% / 4 - 2%);
             background: #fff;
             border-radius: $radius-basic;
             margin: 1%;
-            // display: none;
+            display: none;
 
             .list_img {
                 overflow: hidden;
