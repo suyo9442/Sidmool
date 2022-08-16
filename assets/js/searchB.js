@@ -1,29 +1,22 @@
 // 상품 리스트 생성
 import { doctor, minJung, acbye, mugija, saccharo, ETC } from '../js/prodData.mjs';
-let dataName = [doctor, minJung, acbye, mugija, saccharo, ETC];
 
 let resultBinding = function (data) {
     let searchBox = document.querySelector('#searchRes_list .result_wrap');
 
     data.forEach((a, i) => {
-
-        data.sort(function (a, b) {
-            return a.price - a.price
-        })
-
-        let price = data[i].price;
         let list = `
         <li class="result_item">
             <div class="list_img">
                 <a href="#" class="listDetail">
-                    <img src="../assets/img/products/${data[i].category}0${i}.jpg" alt="products">
+                    <img src="../assets/img/products/${a.category}0${i}.jpg" alt="products">
                 </a>
             </div>
             <div class="list_desc">
                 <strong style="color: #97BF42; font-weight: 500;">SIDMOOL</strong>
-                <a class="title">${data[i].title}</a>
-                <strong class="price">${price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}</strong>&nbsp;원
-                <span class="desc" style="display:none;">${data[i].desc}</span>
+                <a class="title">${a.title}</a>
+                <strong class="price">${a.price.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}</strong>&nbsp;원
+                <span class="desc" style="display:none;">${a.desc}</span>
                 <p class="button clearfix">
                     <a href="#" class="bt"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -40,9 +33,36 @@ let resultBinding = function (data) {
         </li>`;
         searchBox.insertAdjacentHTML('beforeend', list);
     });
+
     return data;
 }
 
-dataName.forEach(data => {
-    resultBinding(data);
+
+
+let dataName = [doctor, minJung, acbye, mugija, saccharo, ETC];
+function dataFunc() {
+    dataName.forEach((data) => {
+        resultBinding(data);
+    });
+}
+dataFunc();
+
+
+let 오름차순 = document.getElementById('ascending');
+
+오름차순.addEventListener('click', e => {
+    e.preventDefault();
+
+    for (let i = 0; i < dataName.length; i++) {
+        let sortAS = dataName[i].sort(function (a, b) {
+            if (a.title < b.title) {
+                return 1
+            } else {
+                return -1
+            }
+        })
+        // console.log(Array.from(sortAS[i].title))
+        // console.log(sortAS)
+    }
 })
+

@@ -21,29 +21,6 @@ let searchFunc = function (searchKey, callback) {
     searchNum.innerHTML = document.querySelectorAll('.count').length;
     searchWord.innerHTML = searchKey;
 
-
-    let 오름차순 = document.getElementById('ascending');
-    오름차순.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        // 상품명 배열 생성
-        let sortArr = [];
-
-        // Nodelist 텍스트 배열 넣기
-        for (let i = 0; i < searchTit.length; i++) {
-            sortArr.push(searchTit[i].innerHTML)
-        }
-
-        sortArr.sort(function (a, b) {
-            if (a < b) {
-                return -1
-            } else {
-                return 1
-            }
-        });
-        console.log(sortArr)
-    })
-
     callback();
 }
 
