@@ -1811,12 +1811,23 @@ h2 {
 }
 #tabCont01 .intro {
   font-size: 1.8rem;
-  background: #fbfff8;
+}
+#tabCont01 .intro .row {
+  display: flex;
+  justify-content: space-between;
+}
+#tabCont01 .intro .row .left {
+  width: 40%;
+}
+#tabCont01 .intro .row .right {
+  width: 60%;
 }
 #tabCont01 .intro strong {
   display: inline-block;
-  line-height: 30px;
+  line-height: 40px;
   margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 2.4rem;
 }
 #tabCont01 .intro ol {
   display: flex;
@@ -1824,8 +1835,17 @@ h2 {
   flex-wrap: wrap;
 }
 #tabCont01 .intro ol li {
-  width: calc(50% - 48px);
-  margin-top: 48px;
+  width: calc(50% - 16px);
+  margin-bottom: 48px;
+  background: #ffffff;
+  box-shadow: 3.3px 3.7px 9.7px 0.3px #f0f0f0;
+  border-radius: 10px;
+  padding: 32px;
+  transition: all 0.3s;
+}
+#tabCont01 .intro ol li.active {
+  background: #97BF42;
+  color: #ffffff;
 }
 #tabCont01 .intro ol li span {
   font-weight: 500;
@@ -1834,7 +1854,7 @@ h2 {
   display: inline-block;
   width: 100%;
   height: 1px;
-  background: #dbdbdb;
+  background: #f0f0f0;
   margin: 10px 0;
 }
 #tabCont01 .intro ol li p {
